@@ -34,7 +34,7 @@ The website field should link to the software documentation or user guides. Basi
 
 ### README.md
 
-Readme should include short statement of need. What is this software, what does it do?
+Readme should include short statement of need. What is this software, what does it do? The README should also link out to other resources in the repository such as contributing guidelines, who the maintainers are, the code of conduct etc.
 
 ### Repository tags/topics
 
