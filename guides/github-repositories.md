@@ -65,7 +65,7 @@ docs/*  docs@example.com
 
 BSD 3-Clause is the preferred license for STScI produced open source software. A file named `LICENSE.md` should be at the top level of the repository.
 
-The copyright holder should be 'Association of Universities for Research in Astronomy'. [Example license](https://github.com/spacetelescope/style-guides/blob/4eefc354e6311e5b8f2d42b11844142175f3ff7a/templates/LICENSE.md)
+The copyright holder should be 'Association of Universities for Research in Astronomy'. [Example license](https://github.com/spacetelescope/style-guides/blob/34f843451363191518ed3294e8f2d734e6a4f04e/templates/LICENSE.md)
 
 ### Code of conduct
 
