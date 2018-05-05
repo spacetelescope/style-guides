@@ -14,6 +14,8 @@ Repositories on GitHub should follow these conventions:
 - [Releases](#releases)
 - [Status](#status)
 
+## Conventions
+
 ### Naming
 
 Pick a logical, ideally human-readable name. Hyphens are preferred over underscores e.g. `style-guides` not `style_guides`
