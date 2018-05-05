@@ -5,6 +5,14 @@ Repositories on GitHub should follow these conventions:
 - [Naming](#naming)
 - [Repository descriptions](#repository-descriptions)
 - [Repository website](#repository-website)
+- [README](#readmemd)
+- [Repository tags/topics](#tagstopics)
+- [Maintainers](#maintainers)
+- [License](#license)
+- [Code of conduct](#code-of-conduct)
+- [Contributor guidelines](#contributor-guidelines)
+- [Releases](#releases)
+- [Status](#status)
 
 ### Naming
 
@@ -25,6 +33,10 @@ The website field should link to the software documentation or user guides. Basi
 ### README.md
 
 Readme should include short statement of need. What is this software, what does it do?
+
+### Repository tags/topics
+
+Conventions for tags/topics.
 
 ### Maintainers
 
@@ -59,7 +71,7 @@ We expect all STScI projects to adopt a code of conduct that ensures a productiv
 
 ### Contributor guidelines
 
-### Versioning/releases
+### Releases
 
 Use GitHub releases? Follow SemVer?
 
