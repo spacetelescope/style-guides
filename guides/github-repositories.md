@@ -1,6 +1,6 @@
 # GitHub Repositories
 
-Repositories on GitHub should follow these conventions:
+STScI-owned repositories on GitHub have conventions for the following:
 
 - [Naming](#naming)
 - [Repository descriptions](#repository-descriptions)
