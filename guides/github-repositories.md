@@ -38,7 +38,7 @@ Readme should include short statement of need. What is this software, what does 
 
 ### Repository tags/topics
 
-Conventions for tags/topics.
+Repository [topics](https://help.github.com/articles/about-topics/) are used to index and search our repositories on the `stsci.edu` website. Mission and instrument abbreviations are preferred to full names e.g. `hst` not `hubble space telescope` and `cos` not `cosmic origins spectrograph`.
 
 ### Maintainers
 
@@ -75,7 +75,7 @@ We expect all STScI projects to adopt a code of conduct that ensures a productiv
 
 ### Releases
 
-Use GitHub releases? Follow SemVer?
+Where possible use [GitHub releases](https://help.github.com/articles/creating-releases/) following [SemVer](https://semver.org/) conventions.
 
 ### Status
 
