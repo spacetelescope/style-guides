@@ -73,6 +73,8 @@ We expect all STScI projects to adopt a code of conduct that ensures a productiv
 
 ### Contributor guidelines
 
+When possible, include contributing guidelines in your repository either as a section named `Contributing` in the README or in a dedicated file named `CONTRIBUTING.md`
+
 ### Releases
 
 Where possible use [GitHub releases](https://help.github.com/articles/creating-releases/) following [SemVer](https://semver.org/) conventions.
