@@ -42,7 +42,7 @@ Repository [topics](https://help.github.com/articles/about-topics/) are used to 
 
 ### Maintainers
 
-Plain text `MAINTAINERS` file? Or perhaps follow GitHub's `CODEOWNERS` convention: https://help.github.com/articles/about-codeowners/
+We follow GitHub's `CODEOWNERS` convention: https://help.github.com/articles/about-codeowners/
 
 ```
 # Lines starting with '#' are comments.
