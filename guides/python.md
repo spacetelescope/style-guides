@@ -7,6 +7,12 @@ give recommendations for how to develop in Python to produce code that
 is easy to read, to install, and to share.  We strongly recommend that
 new Python projects follow the recommendations in this guide.
 
+The Python ecosystem is shared one and we strongly recommend searching
+for other similar projects that might met your needs prior to starting
+a new one.  If appropriate, we recommend making contributions to that
+project rather than starting a new one. In the development of the
+package we recommend following a philosophy of open development.
+
 The style guide is based on the [Python Style Guideline][1] (PEP8),
 the [Astropy Coding Guidelines][2], [JWST Quick Look Style Guide][5],
 and the [LSST Style Guide][3]. If in doubt, err on the side of making
