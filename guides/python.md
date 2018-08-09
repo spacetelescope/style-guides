@@ -1,7 +1,7 @@
 # Python 
 
 Python is becoming the dominant programming language in astronomy and
-much of the supported software for the institute is currently written
+much of the supported software for the Institute is currently written
 or being developed in python.  As such, this style guide is meant to
 give recommendations for how to develop in Python to produce code that
 is easy to read, to install, and to share.  We strongly recommend that
@@ -158,7 +158,7 @@ Package conventions can make it easier to deploy and maintain
 resources.  The following conventions are recommended to make it
 easier to set up the testing, documentation, and workflow.
 
-* All STScI packages should follow the [Github Repositories
+* All STScI packages should follow the [GitHub Repositories
   Guide](https://github.com/spacetelescope/style-guides/blob/master/guides/github-repositories.md)
 
 Recommended template packages: 
