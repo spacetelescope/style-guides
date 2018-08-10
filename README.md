@@ -5,6 +5,7 @@ This repository contains styles guides for sofware-related content developed by 
 Currently there are styles guides for:
 
 - [GitHub repositories](guides/github-repositories.md)
+- [Python](guides/python.md)
 
 ### Related work
 
