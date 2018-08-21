@@ -45,10 +45,6 @@ Creating a new notebook can take time, and in the development process, some cont
 
 Use [Markdown](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html#Markdown-basics) for text formatting and prose. When necessary, include small inline comments before a code block in a cell.
 
-## Accessibility
-
-What should we say here?
-
 ## Ancillary files
 
 Sometimes you need to include ancillary files with your notebook. Examples include images, small data files (e.g. CSV, FITS tables). If your notebook needs ancillary files to work, make sure you include them at the root level relative to your notebook. E.g.:
