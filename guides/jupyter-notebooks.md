@@ -21,19 +21,15 @@ As the notebook author, don't assume people know the same things as you. This me
 
 Creating a new notebook can take time, and in the development process, some content cells (code and prose) may become out of date/superfluous. Before checking in your work, make sure that:
 
-- Cells are modular
+- Cells capture logical units of work. i.e. don't put all of your code in a single giant cell of logic. Try and break it out into smaller units, inter-dispersed with text explaining what you are doing.
 - All of the cells are required. i.e. you can go from the start of your notebook to the end, executing each cell.
 - Checked-in notebook don't contain the executed cell outputs. When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), we run [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/) and turn your notebooks into web-hosted versions. At that point, the cells will be executed... and rendered?
 
-When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), all of the cells will be executed by our testing infrastructure.
+**Define your environment at the start**
 
-**Don't check in executed cells**
+If you need specific packages to enable your notebook to execute, import them at the top of your notebook and explain why you're using them. For example:
 
-
-
-**Define your environment**
-
-If you need specific packages installed to enable your notebook to execute, define them in a custom [`requirements.txt`](https://pip.pypa.io/en/stable/reference/pip_install/#example-requirements-file) file that can be used to install these dependencies.
+<img width="1241" alt="screen shot 2018-08-21 at 1 53 15 pm" src="https://user-images.githubusercontent.com/4483/44419575-98d39980-a549-11e8-9441-e57ae20256f4.png">
 
 ## Notebook structure
 
