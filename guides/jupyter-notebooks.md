@@ -6,22 +6,30 @@ Juptyer Notebooks are a convenient format for creating and sharing documents tha
 
 **Design for portability**
 
-Notebooks should be portable. Don't assume a consumer of this notebook is running in the same environment as you.
+Notebooks should be portable, that is, the should be designed to work on multiple computers. There are a few simple steps you can take as a notebook author to increase the 'portability' of a notebook:
 
-- APIs not file systems. Use libraries such as [`astroquery.mast`](https://astroquery.readthedocs.io/en/latest/) to retrieve data you use with your notebook. Never hard-code a path to a file on e.g. a shared filesystem.
+- Use APIs not file systems to access data. Where at all possible, use libraries such as [`astroquery.mast`](https://astroquery.readthedocs.io/en/latest/) to retrieve the data required for your notebook. Never hard-code a path to a file on e.g. a shared filesystem.
 - If you need specific packages installed to enable your notebook to execute, define them in a custom [`requirements.txt`](https://pip.pypa.io/en/stable/reference/pip_install/#example-requirements-file) file that can be used to install these dependencies.
 
-**Don't make assumptions**
+**Make no assumptions**
 
-As the notebook author, don't assume people know the same things as you. This means any terms/common acronyms should be defined when they are first used. If you're using some kind of astronomical parameter, define it (e.g. in its mathematical form), link to definitions in the literature etc.
+As the notebook author, don't assume people know the same things as you. This means any terms/common acronyms should be defined when they are first used. If you're using some kind of astronomical parameter, make sure you define it (e.g. in its mathematical form) and link to any definitions (literature/Wikipedia etc.)
 
-**Execute all cells**
+**Keep good cell discipline**
+
+<img width="1235" alt="cell" src="https://user-images.githubusercontent.com/4483/44419332-d7b51f80-a548-11e8-8125-457bcfc23d30.png">
+
+Creating a new notebook can take time, and in the development process, some content cells (code and prose) may become out of date/superfluous. Before checking in your work, make sure that:
+
+- Cells are modular
+- All of the cells are required. i.e. you can go from the start of your notebook to the end, executing each cell.
+- Checked-in notebook don't contain the executed cell outputs. When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), we run [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/) and turn your notebooks into web-hosted versions. At that point, the cells will be executed... and rendered?
 
 When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), all of the cells will be executed by our testing infrastructure.
 
 **Don't check in executed cells**
 
-When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), we run `nbconvert` and turn your notebooks into web-hosted versions. At that point, the cells will be executed... and rendered?
+
 
 **Define your environment**
 
