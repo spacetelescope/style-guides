@@ -43,7 +43,11 @@ Creating a new notebook can take time, and in the development process, some cont
 
 ## Prose
 
-Markdown for prose. Inline comments used sparingly.
+Use [Markdown](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html#Markdown-basics) for text formatting and prose. When necessary, include small inline comments before a code block in a cell.
+
+## Accessibility
+
+What should we say here?
 
 ## Ancillary files
 
