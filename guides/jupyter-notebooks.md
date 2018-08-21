@@ -47,14 +47,27 @@ Markdown for prose. Inline comments used sparingly.
 
 ## Ancillary files
 
-e.g. images, csv files. Where to put them, other files required by the notebook (such as `requirements.txt`)
+Sometimes you need to include ancillary files with your notebook. Examples include images, small data files (e.g. CSV, FITS tables). If your notebook needs ancillary files to work, make sure you include them at the root level relative to your notebook. E.g.:
 
-## Example notebooks following this style guide
+```
+Notebooks/
+|-- MyAwesomeNotebook
+|    |-- my_awesome_notebook.ipynb
+|    +-- galaxy.png
+|    +-- data.csv
+|    +-- requirements.txt
+```
+
+## Further reading
+
+### Example notebooks following this style guide
+
+Here are some example notebooks that follow this style guide:
 
 - Notebook 1
 - Notebook 2
 - Notebook 3
 
-## Contributing to the STScI notebooks repository
+### Contributing to the STScI notebooks repository
 
 View the contributing guide in the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
