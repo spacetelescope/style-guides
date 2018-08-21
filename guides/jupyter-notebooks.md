@@ -10,7 +10,6 @@ If you need specific packages to enable your notebook to execute, import them at
 
 ![Imports](https://user-images.githubusercontent.com/4483/44419575-98d39980-a549-11e8-9441-e57ae20256f4.png)
 
-
 **Make no assumptions**
 
 As the notebook author, don't assume people know the same things as you. This means any terms/common acronyms should be defined when they are first used. If you're using some kind of astronomical parameter, make sure you define it (e.g. in its mathematical form) and link to any definitions (literature/Wikipedia etc.)
@@ -24,7 +23,7 @@ Notebooks should be portable, that is, the should be designed to work on multipl
 
 **Keep good cell discipline**
 
-<img width="1235" alt="cell" src="https://user-images.githubusercontent.com/4483/44419332-d7b51f80-a548-11e8-8125-457bcfc23d30.png">
+![A notebook cell](https://user-images.githubusercontent.com/4483/44419332-d7b51f80-a548-11e8-8125-457bcfc23d30.png)
 
 Creating a new notebook can take time, and in the development process, some content cells (code and prose) may become out of date/superfluous. Before checking in your work, make sure that:
 
