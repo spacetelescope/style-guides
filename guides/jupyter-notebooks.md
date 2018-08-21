@@ -45,9 +45,9 @@ Creating a new notebook can take time, and in the development process, some cont
 
 Markdown for prose. Inline comments used sparingly.
 
-## Associated files
+## Ancillary files
 
-e.g. images. Where to put them, other files required by the notebook (such as `requirements.txt`)
+e.g. images, csv files. Where to put them, other files required by the notebook (such as `requirements.txt`)
 
 ## Example notebooks following this style guide
 
@@ -57,8 +57,4 @@ e.g. images. Where to put them, other files required by the notebook (such as `r
 
 ## Contributing to the STScI notebooks repository
 
-This seems like a duplication of the contributing guidelines for the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
-
-- [Naming](#naming)
-- [Maintainers](#maintainers)
-- [What to check in](#what-to-check-in)
+View the contributing guide in the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
