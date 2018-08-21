@@ -5,6 +5,7 @@ This repository contains styles guides, suggested workflows, and best practices 
 Currently there are styles guides for:
 
 - [GitHub repositories](guides/github-repositories.md)
+- [Jupyter Notebooks](guides/jupyter-notebooks.md)
 - [Python](guides/python.md)
 
 ### Related work
