@@ -1,6 +1,6 @@
 # Jupyter Notebooks
 
-Juptyer Notebooks are a convenient format for creating and sharing documents that combined code, analyses, vizualizations, and prose. This guide describes best practices for creating readable (easy to understand), portable (likely to work on many computers) notebooks, and is the required format for any contributions to the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
+Juptyer Notebooks are a convenient format for creating and sharing documents that combine code, data analyses, vizualizations, and prose. This guide describes best practices for creating readable (easy to understand), portable (likely to work on many computers) notebooks. Following this guide is a requirement for those authors contributing content to the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
 
 ## Principles
 
@@ -41,6 +41,12 @@ Markdown for prose. Inline comments used sparingly.
 ## Associated files
 
 e.g. images. Where to put them, other files required by the notebook (such as `requirements.txt`)
+
+## Example notebooks following this style guide
+
+- Notebook 1
+- Notebook 2
+- Notebook 3
 
 ## Contributing to the STScI notebooks repository
 
