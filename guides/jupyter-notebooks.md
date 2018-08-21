@@ -33,17 +33,72 @@ Creating a new notebook can take time, and in the development process, some cont
 
 ## Recommended notebook structure
 
+It's recommended that Jupyter notebooks use the following suggested structure:
 
+- [Title](#title)
 - [Table of Contents](#table-of-contents)
+- [Imports](#imports)
+- [Introduction](#introduction)
+- [Section structure](#section-structure)
+- [Additional resources](#additional-resources)
+- [About this notebook](#about-this-notebook)
+- [Footer](#footer)
+
+### Title
+
+Pick a clear, descriptive title. For titles, use the [following Markdown syntax](https://www.markdownguide.org/basic-syntax/#headings):
+
+```
+# My clear, descriptive title
+```
+
+### Table of Contents
+
+Use a [Markdown list](https://www.markdownguide.org/basic-syntax/#unordered-lists) to link to the different sections of your notebook:
+
+```
+- [Imports](#imports)
 - [Introduction](#introduction)
 - [Defining terms](#defining-terms)
-- [Section structure](#section-structure)
-- [Author details](#author-details)
-- [Footer](#footer)
+```
+
+### Imports
+
+Import your dependencies near the top of the notebook, explaining why you're including each one. For example:
+
+![Imports](https://user-images.githubusercontent.com/4483/44419575-98d39980-a549-11e8-9441-e57ae20256f4.png)
+
+### Introduction
+
+Write a short introduction explaining the purpose of the notebook. Link to any background materials/resources that may be useful to the reader to provide additional context.
+
+#### Defining terms
+
+Be sure to define any terms/common acronyms at the end of your introduction. If you're using some kind of astronomical parameter, make sure you define it (e.g. in its mathematical form) and link to any definitions (literature/Wikipedia etc.)
+
+### Sections
+
+Break sections up with the following [Markdown syntax]((https://www.markdownguide.org/basic-syntax/#headings)):
+
+```
+## Section 1
+
+## Section 2
+```
+
+### About this notebook
+
+Let the world know who the author of this great notebook is! If possible/appropriate, include a contact email address for users who might need support (e.g. `archive@stsci.edu`)
+
+### Footer
+
+Notebooks should use the standard STScI footer:
+
+![Footer](https://user-images.githubusercontent.com/4483/44435082-4e1f4500-a57c-11e8-88d3-6d09129f5f61.png)
 
 ## Prose
 
-Use [Markdown](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html#Markdown-basics) for text formatting and prose. When necessary, include small inline comments before a code block in a cell.
+Use [Markdown](https://www.markdownguide.org/basic-syntax/#paragraphs-1) for text formatting and prose. When necessary, include small inline comments before a code block in a cell.
 
 ## Ancillary files
 
