@@ -64,9 +64,9 @@ Notebooks/
 
 Here are some example notebooks that follow this style guide:
 
-- Notebook 1
-- Notebook 2
-- Notebook 3
+- [Kepler Full Frame Images (FFI)](https://github.com/spacetelescope/notebooks/blob/master/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
+- [Kepler Lightcurves](https://github.com/spacetelescope/notebooks/blob/master/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb)
+- [Kepler Target Pixel Files (TPF)](https://github.com/spacetelescope/notebooks/blob/master/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
 
 ### Contributing to the STScI notebooks repository
 
