@@ -4,13 +4,28 @@ Juptyer Notebooks are a convenient format for creating and sharing documents tha
 
 ## Principles
 
-**APIs not filesystems:** Notebooks should be portable. Don't assume a consumer of this notebook is running in the same environment as you.
+**Design for portability**
 
-**Don't make assumptions:** Don't assume people know the same things as you. This means any terms/common acronyms should be defined when they are first used.
+Notebooks should be portable. Don't assume a consumer of this notebook is running in the same environment as you.
 
-**Execute all cells:** When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), all of the cells will be executed by our testing infrastructure.
+- APIs not file systems. Use libraries such as [`astroquery.mast`](https://astroquery.readthedocs.io/en/latest/) to retrieve data you use with your notebook. Never hard-code a path to a file on e.g. a shared filesystem.
+- If you need specific packages installed to enable your notebook to execute, define them in a custom [`requirements.txt`](https://pip.pypa.io/en/stable/reference/pip_install/#example-requirements-file) file that can be used to install these dependencies.
 
-**Define your environment:** If you need specific packages installed to enable your notebook to execute, define them in a custom [`requirements.txt`](https://pip.pypa.io/en/stable/reference/pip_install/#example-requirements-file) file that can be used to install these dependencies.
+**Don't make assumptions**
+
+As the notebook author, don't assume people know the same things as you. This means any terms/common acronyms should be defined when they are first used. If you're using some kind of astronomical parameter, define it (e.g. in its mathematical form), link to definitions in the literature etc.
+
+**Execute all cells**
+
+When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), all of the cells will be executed by our testing infrastructure.
+
+**Don't check in executed cells**
+
+When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), we run `nbconvert` and turn your notebooks into web-hosted versions. At that point, the cells will be executed... and rendered?
+
+**Define your environment**
+
+If you need specific packages installed to enable your notebook to execute, define them in a custom [`requirements.txt`](https://pip.pypa.io/en/stable/reference/pip_install/#example-requirements-file) file that can be used to install these dependencies.
 
 ## Notebook structure
 
