@@ -1,6 +1,6 @@
 # Style Guides
 
-This repository contains styles guides for sofware-related content developed by STScI staff. Style guides are designed to ensure that STScI software, GitHub repositories, documentation, and example analyses follow a consistent style.
+This repository contains styles guides, suggested workflows, and best practices for sofware-related content developed by STScI staff. Style guides are designed to ensure that STScI software, GitHub repositories, documentation, and example analyses follow a consistent style. Suggested workflows provide robust methods for producing work to help aid collaboration and maximize clarity. While we recommend reading the full policies and further material, we highlight some of the most common best practices that are applicable to our software projects.  
 
 Currently there are styles guides for:
 
