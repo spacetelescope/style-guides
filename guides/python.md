@@ -1,4 +1,4 @@
-# Python 
+# Python
 
 Python is becoming the dominant programming language in astronomy and
 much of the supported software for the Institute is currently written
@@ -24,7 +24,8 @@ import this``.
 
 Python 3 is the recommended version of Python, and when possible, we
 strongly recommend developing in the [latest version of
-Python](https://github.com/spacetelescope/style-guides/issues/13).
+Python](https://github.com/spacetelescope/style-guides/issues/13).  For more
+detail, see the [software versioning and dependencies guide](software-versioning.md).
 
 ## Style
 
@@ -69,13 +70,13 @@ others are best practices to help minimize possible bugs.
 * Imports are always put at the top of the file, just after any module
 comments and docstrings, and before module globals and constants.
 
-* Using `from packagename import *` should be avoided. 
+* Using `from packagename import *` should be avoided.
 
 * The `import numpy as np`, `import matplotlib as mpl`, and `import
   matplotlib.pyplot as plt` naming conventions should be used wherever
   relevant.
 
- 
+
 ## Documentation
 
 Documentation is a key part to any package and helps guide the
@@ -120,8 +121,8 @@ Package documnentation should be built using
 recommended to be in [Restructured
 Text](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#explicit-markup)
 
-Notebooks can be used as part of the documentation.  These can 
-be included in the automatically built documentation. 
+Notebooks can be used as part of the documentation.  These can
+be included in the automatically built documentation.
 
 
 ## Testing Conventions
@@ -138,7 +139,7 @@ for testing.
 ### Unit tests
 
 Unit test should be included directly with the code and test low level
-functionality.   The inclusion of unit tests is strongly recommended. 
+functionality.   The inclusion of unit tests is strongly recommended.
 
 The suggested layout for the unit tests would be in a directory with
 the code under a directory named tests.  The following would be an
@@ -167,7 +168,7 @@ easier to set up the testing, documentation, and workflow.
 * All STScI packages should follow the [GitHub Repositories
   Guide](https://github.com/spacetelescope/style-guides/blob/master/guides/github-repositories.md)
 
-Recommended template packages: 
+Recommended template packages:
 * [astropy template package](https://github.com/astropy/package-template) with STSci specific changes
 * [STScI Template Package](https://github.com/spacetelescope/stsci-package-template)
 
@@ -190,9 +191,9 @@ References
 
 [1]: https://www.python.org/dev/peps/pep-0008/?
 
-[2]: http://docs.astropy.org/en/stable/development/codeguide.html 
+[2]: http://docs.astropy.org/en/stable/development/codeguide.html
 
-[3]: https://developer.lsst.io/python/style.html   
+[3]: https://developer.lsst.io/python/style.html
 
 [4]: https://www.python.org/dev/peps/pep-0257/
 
