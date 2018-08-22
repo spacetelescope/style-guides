@@ -87,12 +87,9 @@ If the user needs to download data to run the tutorial properly, where possible,
 Explain pertinent details about the file you've just downloaded. For example, if working with Kepler lightcurves, explain what's in the different file extensions:
 
 ```
-- No. 0 (Primary):
-This HDU contains meta-data related to the entire file.
-- No. 1 (Light curve):
-This HDU contains a binary table that holds data like flux measurements and times. We will extract information from here when we define the parameters for the light curve plot.
-- No. 2 (Aperture):
-This HDU contains the image extension with data collected from the aperture. We will also use this to display a bitmask plot that visually represents the optimal aperture used to create the SAP_FLUX column in HDU1.
+- No. 0 (Primary): This HDU contains meta-data related to the entire file.
+- No. 1 (Light curve): This HDU contains a binary table that holds data like flux measurements and times. We will extract information from here when we define the parameters for the light curve plot.
+- No. 2 (Aperture): This HDU contains the image extension with data collected from the aperture. We will also use this to display a bitmask plot that visually represents the optimal aperture used to create the SAP_FLUX column in HDU1.
 
 ```
 
