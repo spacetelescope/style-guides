@@ -6,14 +6,14 @@ This style guide provides suggestions for software versioning for STScI
 software, and the closely related topic of expectations for dependencies. While
 some of these rules are of general use, the implementation details usually
 depend on particular programming languages.  Hence this guide is subdivided into
-A short set of general guidelines, and more detailed suggestsions for specific
+a short set of general guidelines, and more detailed suggestsions for specific
 languages.
 
 This document is meant as a guide to provide implementation suggestions and best
 practices, but there *is* a formal
 [STScI policy on software versions]( https://innerspace.stsci.edu/display/isec/Software+Language+Supported+Versions)
 that should be followed for operation software. At the time of this writing,
-following this guide should ensure compliance with this policy, however.
+following this guide should ensure compliance with this policy.
 
 ## General
 
@@ -21,7 +21,7 @@ following this guide should ensure compliance with this policy, however.
 
 When reasonable, software should follow the principles of
 ["Semantic Versioing"](https://semver.org/).  See the linked page for more
-details, but the  The idea here is simple: version numbers should be
+details, but the idea here is simple: version numbers should be
 MAJOR.MINOR.PATCH, where MAJOR is only updated for backwards-incompatible
 changes, MINOR for backwards-compatible changes with new features, or PATCH
 for changes without new features (e.g., bugfixes or documentation improvements).
@@ -39,7 +39,7 @@ version number indicating their status. E.g., `v0.3.1beta` or `v.1.2.3dev`. It
 is important that these versions correspond to the *next* release however, so
 development software (i.e. the "master" branch in the
 [git workflows](git-workflow.md) should always point to a as-yet-unreleased
-version. This should be enforced by automated tools where practical (E.g.,
+version. This should be enforced by automated tools where practical (e.g.,
 the Python package templates require a "release" tag to be set, and scripts
 automatically use that to append "dev" to the version).
 
@@ -47,12 +47,12 @@ automatically use that to append "dev" to the version).
 ### Software others build
 
 Whenever practical, the re-use of open software built by others is desirable if
-it meets a needs in software *we* are building. This requires managing of
-dependent versions, as they may either stop being supported, or make
+it meets the needs in software *we* are building. This requires managing of
+dependent versions: as they may either stop being supported or make
 backwards-incompatible changes that break the dependent software. Because of the
-broad range of development models that exist it is very hard to set detailed
-guidelines beyond it being the responsibility of the dependent's
-maintainer to keep an eye on how dependencies are evolving and set what version
+broad range of development models that exist, it is very hard to set detailed
+guidelines beyond it being the responsibility of the maintainer to keep an 
+eye on how dependencies are evolving and set what version
 should be supported. However, two good rules of thumb are:
 
 * "The current version and the previous two" is often a reasonable choice of
@@ -63,6 +63,8 @@ should be supported. However, two good rules of thumb are:
   the dependent, unless the dependent software's maintainer is willing to take
   complete responsibility for support of the old version of the dependency
 
+Building these rules into the test infrastructure for the package can be a very
+useful way to catch changes in dependencies that may affect your package. 
 
 ## Python
 
@@ -72,9 +74,12 @@ for Python 2.x. Additionally, the enormous open-source community of Python
 software has leads to a  diversity of dependent version-tracking tools and
 complexities.
 
+We strongly recommend that all code is developed for Python 3.x.  New Python 
+packages should target 3.x exclusively and not use compatibility packages 
+like `2to3` or `six`.
+
 ### Major Version Support
-The target major Python version is Python 3.x. New Python packages should target
-3.x exclusively and not use compatibility packages like `2to3` or `six`.
+The target major Python version is Python 3.x. 
 
 The reasoning behind this is straightforward: the Python and Astropy developers
 are sun-setting support for Python 2.x. This means that by 2019 (possibly 2020),
@@ -162,7 +167,9 @@ community libraries (e.g., numpy, scipy, or astropy). The guidelines for these
 packages are similar to the general software case, and are essentially the same
 as for 3.x Minor Versions, but with two important differences:
 
-* Only versions supported by the community package's maintainers should be supported. That is, in the first guideline replace "Python developers" with "the package's maintainers".
+* Only versions supported by the community package's maintainers should be supported. 
+  That is, in the first guideline replace "Python developers" with "the package's 
+  maintainers".
 * Because many community supported packages have more uneven release cycles than
   the Python language, and support effort scales roughly with the number of
   requires versions to support, for community packages a better guideline for
