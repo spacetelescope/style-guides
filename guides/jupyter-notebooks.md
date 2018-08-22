@@ -39,7 +39,9 @@ It's recommended that Jupyter notebooks use the following suggested structure:
 - [Table of Contents](#table-of-contents)
 - [Imports](#imports)
 - [Introduction](#introduction)
-- [Section structure](#section-structure)
+- [Loading data](#loading-data)
+- [File information](#file-information)
+- [Sections](#sections)
 - [Additional resources](#additional-resources)
 - [About this notebook](#about-this-notebook)
 - [Footer](#footer)
@@ -75,6 +77,24 @@ Write a short introduction explaining the purpose of the notebook. Link to any b
 #### Defining terms
 
 Be sure to define any terms/common acronyms at the end of your introduction. If you're using some kind of astronomical parameter, make sure you define it (e.g. in its mathematical form) and link to any definitions (literature/Wikipedia etc.)
+
+### Loading data
+
+If the user needs to download data to run the tutorial properly, where possible, use [Astroquery]((https://astroquery.readthedocs.io/en/latest/)) (or similar) to retrieve files.
+
+### File information
+
+Explain pertinent details about the file you've just downloaded. For example, if working with Kepler lightcurves, explain what's in the different file extensions:
+
+```
+- No. 0 (Primary):
+This HDU contains meta-data related to the entire file.
+- No. 1 (Light curve):
+This HDU contains a binary table that holds data like flux measurements and times. We will extract information from here when we define the parameters for the light curve plot.
+- No. 2 (Aperture):
+This HDU contains the image extension with data collected from the aperture. We will also use this to display a bitmask plot that visually represents the optimal aperture used to create the SAP_FLUX column in HDU1.
+
+```
 
 ### Sections
 
