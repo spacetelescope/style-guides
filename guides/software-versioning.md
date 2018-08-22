@@ -9,6 +9,12 @@ depend on particular programming languages.  Hence this guide is subdivided into
 A short set of general guidelines, and more detailed suggestsions for specific
 languages.
 
+This document is meant as a guide to provide implementation suggestions and best
+practices, but there *is* a formal
+[STScI policy on software versions]( https://innerspace.stsci.edu/display/isec/Software+Language+Supported+Versions)
+that should be followed for operation software. At the time of this writing,
+following this guide should ensure compliance with this policy, however.
+
 ## General
 
 ### Software we build
@@ -56,6 +62,7 @@ should be supported. However, two good rules of thumb are:
 * Only versions supported by the dependency's maintainers should be supported by
   the dependent, unless the dependent software's maintainer is willing to take
   complete responsibility for support of the old version of the dependency
+
 
 ## Python
 
