@@ -60,7 +60,6 @@ and the image will end up in the same place as any ancillary files.
 It's recommended that Jupyter notebooks use the following suggested structure:
 
 - [Title](#title)
-- [Table of Contents](#table-of-contents)
 - [Imports](#imports)
 - [Introduction](#introduction)
 - [Loading data](#loading-data)
@@ -77,17 +76,6 @@ Pick a clear, descriptive title. For titles, use the [following Markdown syntax]
 ```
 # My clear, descriptive title
 ```
-
-### Table of Contents
-
-Use a [Markdown list](https://www.markdownguide.org/basic-syntax/#unordered-lists) to link to the different sections of your notebook:
-
-```
-- [Imports](#imports)
-- [Introduction](#introduction)
-- [Defining terms](#defining-terms)
-```
-
 ### Imports
 
 Import your dependencies near the top of the notebook, explaining why you're including each one. For example:
