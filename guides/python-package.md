@@ -2,7 +2,8 @@
 
 The following guide is to simplify the process of creating a python
 package.  We currently recommend using the [STScI cookie cutter
-template package]().  This is a modified verison of the [Astropy
+template package](https://github.com/spacetelescope/stsci-package-template/tree/stsci-cookiecutter).  
+This is a modified verison of the [Astropy
 Template Package](https://github.com/astropy/package-template) that
 includes a number of features that make it easier to set up, install,
 and maintain your package while also having the STScI branding,
@@ -105,7 +106,7 @@ or `conda`:
 
 2. Run cookiecutter using the STScI package template:
 ```
-cookiecutter https://github.com/spacetelescope/stsci-package-template --checkout cookiecutter
+cookiecutter https://github.com/spacetelescope/stsci-package-template --checkout stsci-cookiecutter
 ```
 
 The code will prompt for answers to several questions.  Other than the
