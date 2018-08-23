@@ -117,7 +117,7 @@ That is, it should be executed along with tests to ensure the documentation
 builds correctly and any code examples run properly.
 
 Notebooks can be used as part of the documentation.  They shoud be considered
-partsof the documentation, however, and in general should be
+parts of the documentation, however, and in general should be
 included in the automatically built documentation using e.g.,
 [`nbconvert`](https://nbconvert.readthedocs.io/).
 
@@ -128,6 +128,7 @@ Docstrings are strongly recommended to follow the
 convention.  All functions and classes should have a docstring that
 explicitly states what it does, what the input parameters are, and
 what it returns.
+
 
 Docstrings should always be included in the built sphinx documentation, via
 standard Sphinx plugins like
@@ -156,7 +157,8 @@ the code under a directory named tests.  The following would be an
 example of where the unit tests should sit in the package:
 `jwst/jwst/assign_wcs/tests`.
 
-Large data sets should be avoided for unit tests.
+Large data sets (i.e, >~ 100kB) should be avoided for unit tests. See
+the [data storage guide](where-to-put-your-data.md) for more details.
 
 ### Regression tests
 
