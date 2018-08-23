@@ -27,11 +27,11 @@ Notebooks should be portable, that is, they should be designed to work on multip
 
 ![A notebook cell](images/notebook-cell.png)
 
-Creating a new notebook can take time, and in the development process, some content cells (code and prose) may become out of date/superfluous. Before checking in your work, make sure that:
+Creating a new notebook can take time, and in the development process, some content cells (code and prose) may become out of date/superfluous. Before commiting your work to a source repository, make sure that:
 
 - Cells capture logical units of work. i.e. don't put all of your code in a single giant cell of logic. Try and break it out into smaller units, inter-dispersed with text explaining what you are doing.
-- All of the cells are required. i.e. you can go from the start of your notebook to the end, executing each cell.
-- Checked-in notebook don't contain the executed cell outputs. When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), we run [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/) and turn your notebooks into web-hosted versions. At that point, the cells will be executed... and rendered?
+- All of the cells are required and *in order*. i.e., you can go from the start of your notebook to the end, executing each cell.
+- Checked-in notebook shouldn't contain the executed cell outputs. Any results you check in take up valuable space in the notebook, making it harder to review and bloating the repository. When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), we will run [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/) to execute your notebook (overriding anything already executed) and [`sphinx`](http://www.sphinx-doc.org/) to create web-hosted versions. 
 
 ## Recommended notebook structure
 
