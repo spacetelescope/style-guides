@@ -165,6 +165,10 @@ Here are some example notebooks that follow this style guide:
 - [Kepler Lightcurves](https://github.com/spacetelescope/notebooks/blob/master/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb)
 - [Kepler Target Pixel Files (TPF)](https://github.com/spacetelescope/notebooks/blob/master/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
 
+### Other Resources
+
+For a related view of notebook styles in the astronomy context, see the [Astropy tutorials notebook contributing guide](https://astropy-tutorials.readthedocs.io/en/latest/contributing.html#contributing-page)
+
 ### Contributing to the STScI notebooks repository
 
 View the contributing guide in the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
