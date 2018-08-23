@@ -8,7 +8,7 @@ Juptyer Notebooks are a convenient format for creating and sharing documents tha
 
 If you need specific packages to enable your notebook to execute, import them at the top of your notebook and explain why you're using them. For example:
 
-![Imports](https://user-images.githubusercontent.com/4483/44419575-98d39980-a549-11e8-9441-e57ae20256f4.png)
+![Imports](images/imports.png)
 
 ### Make no assumptions
 
@@ -25,7 +25,7 @@ Notebooks should be portable, that is, they should be designed to work on multip
 
 ### Keep good cell discipline
 
-![A notebook cell](https://user-images.githubusercontent.com/4483/44419332-d7b51f80-a548-11e8-8125-457bcfc23d30.png)
+![A notebook cell](images/notebook-cell.png)
 
 Creating a new notebook can take time, and in the development process, some content cells (code and prose) may become out of date/superfluous. Before checking in your work, make sure that:
 
@@ -70,7 +70,7 @@ Use a [Markdown list](https://www.markdownguide.org/basic-syntax/#unordered-list
 
 Import your dependencies near the top of the notebook, explaining why you're including each one. For example:
 
-![Imports](https://user-images.githubusercontent.com/4483/44419575-98d39980-a549-11e8-9441-e57ae20256f4.png)
+![Imports](images/imports.png)
 
 ### Introduction
 
@@ -127,7 +127,7 @@ Let the world know who the author of this great notebook is! If possible/appropr
 
 Notebooks should use the standard STScI footer:
 
-![Footer](https://user-images.githubusercontent.com/4483/44435082-4e1f4500-a57c-11e8-88d3-6d09129f5f61.png)
+![Footer](images/footer.png)
 
 ## Prose
 
