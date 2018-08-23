@@ -8,6 +8,10 @@ Currently there are styles guides for:
 - [Jupyter Notebooks](guides/jupyter-notebooks.md)
 - [Python](guides/python.md)
 
+In addition, there are the following guides for best practices and workflows:
+- [Git Workflow](guides/git-workflow.md)
+- [Software Versioning](guides/software-versioning.md)
+
 ### Related work
 
 - The STScI package template: https://github.com/spacetelescope/stsci-package-template
