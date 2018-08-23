@@ -4,7 +4,8 @@
 
 
 
-The Office of Public Outreach has put together a [collection of resources about accessibility] (https://innerspace.stsci.edu/pages/viewpage.action?spaceKey=OPO&title=Accessibility).  It is highly recommended to review the resources there for how to make your software more accessible. 
+The Office of Public Outreach has put together a [collection of resources about accessibility](https://innerspace.stsci.edu/pages/viewpage.action?spaceKey=OPO&title=Accessibility).  
+It is highly recommended to review the resources there for how to make your software more accessible. 
 
 
 ## Websites
