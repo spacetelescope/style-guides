@@ -64,8 +64,9 @@ It's recommended that Jupyter notebooks use the following suggested structure:
 - [Introduction](#introduction)
 - [Loading data](#loading-data)
 - [File information](#file-information)
-- [Sections](#sections)
-- [Additional resources](#additional-resources)
+- [Sections](#sections) (xN)
+- [Exercises](#exercises) (optional)
+- [Additional resources](#additional-resources) (optional)
 - [About this notebook](#about-this-notebook)
 - [Footer](#footer)
 
@@ -111,7 +112,7 @@ Where possible (if the code supports it): use code examples that use Jupyter to 
 
 ### Sections
 
-Break sections up with standard [Markdown syntax headings]((https://www.markdownguide.org/basic-syntax/#headings)):
+The meat of your notebook should be sub-divided into sections with useful names to whatever extent makes sense base on the content. Break sections up with standard [Markdown syntax headings]((https://www.markdownguide.org/basic-syntax/#headings)):
 
 ```
 ## Section 1
@@ -128,6 +129,18 @@ A complete thought that's as important as section 1 but doesn't need sub-section
 ```
 
 Be sure to use section headings (i.e., the number of `#`'s) in a way that gives heirarchical meaning to your document.  The header levels are used to do things like intelligently make links, so you don't want to confuse them by using heder levels that don't match the logical flow of the document.
+
+### Exercises
+
+Most notebooks are trying to convey *some* information to their reader.  It's often a good idea, if possible, to include in the notebook something where there is *not* an included answer so that the reader can cement in their mind how whatever it is they were supposed to learn from that notebook. If you do have exercise(s), be sure to leave a blank code cell underneath to show the user that it's meant for them to try it out right there.  You may also want to include a "solutions" notebook next to your main notebook for the user to look at after they have finished their attempt.
+
+### Additional resources
+
+While this isn't always necessary, sometimes you want to Provide some more resources for the reader who wants to learn something beyond what's in the notebook.  Sometimes these don't exist, but if they do, it's good to put them at the end to give the reader somewhere else to go. Usually a list of links using markdown bullet-plus-link format is approopriate:
+```
+* [A neat resource to learn more](http://learning.org/how-i-learned-science-is-cool.html)
+* [A place to find more relevant code](https://github.com/spacetelescope/jwst)
+```
 
 ### About this notebook
 
