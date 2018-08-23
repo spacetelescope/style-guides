@@ -133,20 +133,20 @@ Notebooks should use the standard STScI footer:
 
 Use [Markdown](https://www.markdownguide.org/basic-syntax/#paragraphs-1) for text formatting and prose. Only use code comments when it's a natural inline comment directly connected to that line of code.  Do **not** use code cells with comments to replace of well-written markdown prose!
 
-## Ancillary and generated files
+## On-disk layout and ancillary/generated files
 
-Sometimes you may need to include ancillary files with your notebook. Examples include images, small data files (e.g. small CSV tables). Files of any significant size (> 100 kB is a good rule of thumb) should not be included with the notebook but rather stored outside the repository and accessed via code (see the [data guide](where-to-put-your-data.md)).
-
-If your notebook needs ancillary files to work, make sure you include them at the root level relative to your notebook. E.g.:
+Individual notebooks should live in their own directory along side any ancillary files related to them.  For example:
 
 ```
-Notebooks/
+notebooks/
 |-- MyAwesomeNotebook
 |    |-- my_awesome_notebook.ipynb
-|    +-- galaxy.png
-|    +-- data.csv
+|    +-- object-data.csv
+|    +-- result-plot.png
 |    +-- requirements.txt
 ```
+
+As this demonstrates, sometimes it is appropriate to include ancillary files with your notebook. Examples include small images or data files (E.g., FITS cutouts not accessible via MAST, or CSV tables). Files of any significant size (> 100 kB is a good rule of thumb) should not be included with the notebook but rather stored outside the repository and accessed via code (see [the data guide](where-to-put-your-data.md) for details on how to do this). As shown above, if your notebook needs ancillary files, you should include them at the same level as your notebook.
 
 Similarly, if your notebook involves *writing* files, you should write the notebook so that they are written in the same location.  E.g. if you are making a scatter plot using matplotlib and want to demonstrate to the user how to save it, you can do this in the notebook:
 ```
