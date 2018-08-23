@@ -12,14 +12,16 @@ If you need specific packages to enable your notebook to execute, import them at
 
 ### Make no assumptions
 
-As the notebook author, don't assume people know the same things as you. This means any terms/common acronyms should be defined when they are first used. If you're using some kind of astronomical parameter, make sure you define it (e.g. in its mathematical form) and link to any definitions (literature/Wikipedia etc.)
+As the notebook author, don't assume people know the same things as you. This means any terms/common acronyms should be defined when they are first used. It you're using some kind of astronomical parameter, make sure you define it (e.g. in its mathematical form) or link to any definitions (literature/Wikipedia etc.). If you think this is making your notebook too detailed, use clearly-named sections with appropriate introductions, or split your notebook into two separate ones that reference each other.
+
+Above all, know your audience: if you are writing a notebook only for astronomers in a specific field, you might be more terse on background.  But if so, *say so* at the beginning of your notebook, and know that most readers will not get anything from it.
 
 ### Design for portability
 
-Notebooks should be portable, that is, the should be designed to work on multiple computers. There are a few simple steps you can take as a notebook author to increase the 'portability' of a notebook:
+Notebooks should be portable, that is, they should be designed to work on multiple computers. There are a few simple steps you can take as a notebook author to increase the 'portability' of a notebook:
 
-- Use APIs not file systems to access data. Where at all possible, use libraries such as [`astroquery.mast`](https://astroquery.readthedocs.io/en/latest/) to retrieve the data required for your notebook. Never hard-code a path to a file on e.g. a shared filesystem.
-- If you need specific packages installed to enable your notebook to execute, define them in a custom [`requirements.txt`](https://pip.pypa.io/en/stable/reference/pip_install/#example-requirements-file) file that can be used to install these dependencies.
+- Use APIs not file systems to access data. Where at all possible, use libraries such as [`astroquery.mast`](https://astroquery.readthedocs.io/en/latest/) to retrieve the data required for your notebook. Never hard-code a path to a file on e.g. a shared filesystem. See the [data guide](where-to-put-your-data.md) for more detail on how you might implement this.
+- If you need specific packages installed to enable your notebook to execute, define them in a custom [`requirements.txt`](https://pip.pypa.io/en/stable/reference/pip_install/#example-requirements-file) file that can be used to install these dependencies.  Be as specific as possible: sometimes packages make backward incompatible names, so specifying a particular version of dependencies will protect against that.
 
 ### Keep good cell discipline
 
@@ -76,7 +78,7 @@ Write a short introduction explaining the purpose of the notebook. Link to any b
 
 #### Defining terms
 
-Be sure to define any terms/common acronyms at the end of your introduction. If you're using some kind of astronomical parameter, make sure you define it (e.g. in its mathematical form) and link to any definitions (literature/Wikipedia etc.)
+Be sure to define any terms/common acronyms at the end of your introduction that your audience may not know. If you're using some kind of domain-specific astronomical symbol or unusual mathematical concept, make sure you define it (e.g. in its mathematical form) and link to any definitions (literature/Wikipedia etc.).
 
 ### Loading data
 
@@ -93,15 +95,29 @@ Explain pertinent details about the file you've just downloaded. For example, if
 
 ```
 
+Where possible (if the code supports it): use code examples that use Jupyter to *show* what's in the data.  For example, if you are showing an object that can be read as an Astropy table, display the table:
+
+![show-data-example](images/notebook_table_data_example.png)
+
 ### Sections
 
-Break sections up with the following [Markdown syntax]((https://www.markdownguide.org/basic-syntax/#headings)):
+Break sections up with standard [Markdown syntax headings]((https://www.markdownguide.org/basic-syntax/#headings)):
 
 ```
 ## Section 1
 
+Intro to section 1
+
+### Sub-section 1a
+
+More detailed info about Section 1
+
 ## Section 2
+
+A complete thought that's as important as section 1 but doesn't need sub-sections.
 ```
+
+Be sure to use section headings (i.e., the number of `#`'s) in a way that gives heirarchical meaning to your document.  The header levels are used to do things like intelligently make links, so you don't want to confuse them by using heder levels that don't match the logical flow of the document.
 
 ### About this notebook
 
@@ -115,11 +131,13 @@ Notebooks should use the standard STScI footer:
 
 ## Prose
 
-Use [Markdown](https://www.markdownguide.org/basic-syntax/#paragraphs-1) for text formatting and prose. When necessary, include small inline comments before a code block in a cell.
+Use [Markdown](https://www.markdownguide.org/basic-syntax/#paragraphs-1) for text formatting and prose. Only use code comments when it's a natural inline comment directly connected to that line of code.  Do **not** use code cells with comments to replace of well-written markdown prose!
 
-## Ancillary files
+## Ancillary and generated files
 
-Sometimes you need to include ancillary files with your notebook. Examples include images, small data files (e.g. CSV, FITS tables). If your notebook needs ancillary files to work, make sure you include them at the root level relative to your notebook. E.g.:
+Sometimes you may need to include ancillary files with your notebook. Examples include images, small data files (e.g. small CSV tables). Files of any significant size (> 100 kB is a good rule of thumb) should not be included with the notebook but rather stored outside the repository and accessed via code (see the [data guide](where-to-put-your-data.md)).
+
+If your notebook needs ancillary files to work, make sure you include them at the root level relative to your notebook. E.g.:
 
 ```
 Notebooks/
@@ -129,6 +147,13 @@ Notebooks/
 |    +-- data.csv
 |    +-- requirements.txt
 ```
+
+Similarly, if your notebook involves *writing* files, you should write the notebook so that they are written in the same location.  E.g. if you are making a scatter plot using matplotlib and want to demonstrate to the user how to save it, you can do this in the notebook:
+```
+plt.scatter(...)
+plt.savefig('result-plot.png')
+```
+and the image will end up in the same place as any ancillary files.
 
 ## Further reading
 
