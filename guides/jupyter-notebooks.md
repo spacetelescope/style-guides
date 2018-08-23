@@ -4,12 +4,6 @@ Juptyer Notebooks are a convenient format for creating and sharing documents tha
 
 ## Design principles
 
-### Import your dependencies at the start
-
-If you need specific packages to enable your notebook to execute, import them at the top of your notebook and explain why you're using them. For example:
-
-![Imports](images/imports.png)
-
 ### Make no assumptions
 
 As the notebook author, don't assume people know the same things as you. This means any terms/common acronyms should be defined when they are first used. It you're using some kind of astronomical parameter, make sure you define it (e.g. in its mathematical form) or link to any definitions (literature/Wikipedia etc.). If you think this is making your notebook too detailed, use clearly-named sections with appropriate introductions, or split your notebook into two separate ones that reference each other.
@@ -31,7 +25,7 @@ Creating a new notebook can take time, and in the development process, some cont
 
 - Cells capture logical units of work. i.e. don't put all of your code in a single giant cell of logic. Try and break it out into smaller units, inter-dispersed with text explaining what you are doing.
 - All of the cells are required and *in order*. i.e., you can go from the start of your notebook to the end, executing each cell.
-- Checked-in notebook shouldn't contain the executed cell outputs. Any results you check in take up valuable space in the notebook, making it harder to review and bloating the repository. When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), we will run [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/) to execute your notebook (overriding anything already executed) and [`sphinx`](http://www.sphinx-doc.org/) to create web-hosted versions. 
+- Checked-in notebook shouldn't contain the executed cell outputs. Any results you check in take up valuable space in the notebook, making it harder to review and bloating the repository. When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), we will run [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/) to execute your notebook (overriding anything already executed) and [`sphinx`](http://www.sphinx-doc.org/) to create web-hosted versions.
 
 ## Recommended notebook structure
 
