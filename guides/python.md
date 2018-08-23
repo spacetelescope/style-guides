@@ -105,6 +105,22 @@ documentation.
 
 * Inline comments should not replace documentation - if it's getting complicated enough to need several lines, it should probably be in the docstrings
 
+
+### Narrative Documentation
+
+Package documnentation should be built using
+[Sphinx](http://www.sphinx-doc.org/en/master/index.html) and
+recommended to be in [Restructured
+Text](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#explicit-markup).
+Such documentation should be considered a first-class item along side the code.
+That is, it should be executed along with tests to ensure the documentation
+builds correctly and any code examples run properly.
+
+Notebooks can be used as part of the documentation.  They shoud be considered
+partsof the documentation, however, and in general should be
+included in the automatically built documentation using e.g.,
+[`nbconvert`](https://nbconvert.readthedocs.io/).
+
 ### Docstrings
 
 Docstrings are strongly recommended to follow the
@@ -113,16 +129,10 @@ convention.  All functions and classes should have a docstring that
 explicitly states what it does, what the input parameters are, and
 what it returns.
 
-
-### Narrative Documentation
-
-Package documnentation should be built using
-[Sphinx](http://www.sphinx-doc.org/en/master/index.html) and
-recommended to be in [Restructured
-Text](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#explicit-markup)
-
-Notebooks can be used as part of the documentation.  These can
-be included in the automatically built documentation.
+Docstrings should always be included in the built sphinx documentation, via
+standard Sphinx plugins like
+[automodapi](https://sphinx-automodapi.readthedocs.io/en/latest/) or
+[autodoc](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html).
 
 
 ## Testing Conventions
