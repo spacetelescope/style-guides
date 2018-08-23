@@ -7,10 +7,14 @@ Currently there are styles guides for:
 - [GitHub repositories](guides/github-repositories.md)
 - [Jupyter Notebooks](guides/jupyter-notebooks.md)
 - [Python](guides/python.md)
+- [Accessibility](guides/accessibility.md)
+- [Security](guides/security.md)
 
 In addition, there are the following guides for best practices and workflows:
 - [Git Workflow](guides/git-workflow.md)
 - [Software Versioning](guides/software-versioning.md)
+- [Python Packaging](guides/python-package.md)
+
 
 ### Related work
 
