@@ -27,6 +27,32 @@ Creating a new notebook can take time, and in the development process, some cont
 - All of the cells are required and *in order*. i.e., you can go from the start of your notebook to the end, executing each cell.
 - Checked-in notebook shouldn't contain the executed cell outputs. Any results you check in take up valuable space in the notebook, making it harder to review and bloating the repository. When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), we will run [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/) to execute your notebook (overriding anything already executed) and [`sphinx`](http://www.sphinx-doc.org/) to create web-hosted versions.
 
+### Prose
+
+Use [Markdown](https://www.markdownguide.org/basic-syntax/#paragraphs-1) for text formatting and prose. Only use code comments when it's a natural inline comment directly connected to that line of code.  Do **not** use code cells with comments to replace of well-written markdown prose!
+
+## On-disk layout and ancillary/generated files
+
+Individual notebooks should live in their own directory along side any ancillary files related to them.  For example:
+
+```
+notebooks/
+|-- MyAwesomeNotebook
+|    |-- my_awesome_notebook.ipynb
+|    +-- object-data.csv
+|    +-- result-plot.png
+|    +-- requirements.txt
+```
+
+As this demonstrates, sometimes it is appropriate to include ancillary files with your notebook. Examples include small images or data files (E.g., FITS cutouts not accessible via MAST, or CSV tables). Files of any significant size (> 100 kB is a good rule of thumb) should not be included with the notebook but rather stored outside the repository and accessed via code (see [the data guide](where-to-put-your-data.md) for details on how to do this). As shown above, if your notebook needs ancillary files, you should include them at the same level as your notebook.
+
+Similarly, if your notebook involves *writing* files, you should write the notebook so that they are written in the same location.  E.g. if you are making a scatter plot using matplotlib and want to demonstrate to the user how to save it, you can do this in the notebook:
+```
+plt.scatter(...)
+plt.savefig('result-plot.png')
+```
+and the image will end up in the same place as any ancillary files.
+
 ## Recommended notebook structure
 
 It's recommended that Jupyter notebooks use the following suggested structure:
@@ -122,32 +148,6 @@ Let the world know who the author of this great notebook is! If possible/appropr
 Notebooks should use the standard STScI footer:
 
 ![Footer](images/footer.png)
-
-## Prose
-
-Use [Markdown](https://www.markdownguide.org/basic-syntax/#paragraphs-1) for text formatting and prose. Only use code comments when it's a natural inline comment directly connected to that line of code.  Do **not** use code cells with comments to replace of well-written markdown prose!
-
-## On-disk layout and ancillary/generated files
-
-Individual notebooks should live in their own directory along side any ancillary files related to them.  For example:
-
-```
-notebooks/
-|-- MyAwesomeNotebook
-|    |-- my_awesome_notebook.ipynb
-|    +-- object-data.csv
-|    +-- result-plot.png
-|    +-- requirements.txt
-```
-
-As this demonstrates, sometimes it is appropriate to include ancillary files with your notebook. Examples include small images or data files (E.g., FITS cutouts not accessible via MAST, or CSV tables). Files of any significant size (> 100 kB is a good rule of thumb) should not be included with the notebook but rather stored outside the repository and accessed via code (see [the data guide](where-to-put-your-data.md) for details on how to do this). As shown above, if your notebook needs ancillary files, you should include them at the same level as your notebook.
-
-Similarly, if your notebook involves *writing* files, you should write the notebook so that they are written in the same location.  E.g. if you are making a scatter plot using matplotlib and want to demonstrate to the user how to save it, you can do this in the notebook:
-```
-plt.scatter(...)
-plt.savefig('result-plot.png')
-```
-and the image will end up in the same place as any ancillary files.
 
 ## Further reading
 
