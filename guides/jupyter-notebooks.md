@@ -27,9 +27,9 @@ Creating a new notebook can take time, and in the development process, some cont
 - All of the cells are required and *in order*. i.e., you can go from the start of your notebook to the end, executing each cell. Cells should only fail if they are *meant* to, because you're illustrating the meaning of an error message or similar.
 - Checked-in notebook shouldn't contain the executed cell outputs. Any results you check in take up valuable space in the notebook, making it harder to review and bloating the repository. When your notebook is checked into the [STScI notebooks repository](https://github.com/spacetelescope/notebooks), we will run [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/) to execute your notebook (overriding anything already executed) and [`sphinx`](http://www.sphinx-doc.org/) to create web-hosted versions.
 
-### Write Readable Prose using Markdown
+### Write readable prose using Markdown
 
-Use cells with [Markdown](https://www.markdownguide.org/basic-syntax/#paragraphs-1) formatting to describe anything that isn't actually code.  Also use them either before or after code cells to describe what's happening.  When mathmatics expressions are neede, use the [Jupyter additions to markdown](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#markdown-cells), which are basically carefully-controlled LaTeX.
+Use cells with [Markdown](https://www.markdownguide.org/basic-syntax/#paragraphs-1) formatting to describe anything that isn't actually code.  Also use them either before or after code cells to describe what's happening.  When mathmatics expressions are needed, use the [Jupyter additions to markdown](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#markdown-cells), which are basically carefully-controlled LaTeX.
 
 Only use code comments when it's a natural inline comment directly connected to that line of code.  Do **not** use code cells with comments to replace well-written prose!
 
