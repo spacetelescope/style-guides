@@ -81,4 +81,4 @@ Where possible use [GitHub releases](https://help.github.com/articles/creating-r
 
 ### Status
 
-Acively maintained or not? If not, mark your repository as [archived](https://help.github.com/articles/archiving-repositories/).
+Actively maintained or not? If not, mark your repository as [archived](https://help.github.com/articles/archiving-repositories/).
