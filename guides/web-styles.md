@@ -1,2 +1,14 @@
 # Web Style Guide
-Work in progress...
+
+
+## Colors
+### Orange
+### Grey
+
+
+## Buttons
+
+
+## Padding
+
+
