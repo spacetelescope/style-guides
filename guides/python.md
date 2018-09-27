@@ -27,6 +27,8 @@ strongly recommend developing in the [latest version of
 Python](https://github.com/spacetelescope/style-guides/issues/13).  For more
 detail, see the [software versioning and dependencies guide](software-versioning.md).
 
+If possible, avoid Python 2. Its retirement has a [countdown clock](https://pythonclock.org/).
+
 ## Style
 
 The recommended standard for code will be the [PEP8 Style Guide for
