@@ -2,7 +2,7 @@
 
 Python is becoming the dominant programming language in astronomy and
 much of the supported software for the Institute is currently written
-or being developed in python.  As such, this style guide is meant to
+or being developed in Python.  As such, this style guide is meant to
 give recommendations for how to develop in Python to produce code that
 is easy to read, to install, and to share.  We strongly recommend that
 new Python projects follow the recommendations in this guide.
@@ -140,7 +140,7 @@ standard Sphinx plugins like
 
 Testing is critical to making sure the software works and that it
 continues to work when the code or dependencies are updated.  The
-following is specific to STScI python packages but general
+following is specific to STScI Python packages but general
 recommendations for the testing infrastructure will be described
 elsewhere along with suggested workflows.
 
