@@ -4,7 +4,7 @@ The following is a style guide for the STScI-hosted web applications to have the
 
 ## Typography
 
-![Typography](https://github.com/spacetelescope/style-guides/blob/master/guides/images/web-style-typography.png)
+![Typography](images/web-style-typography.png)
 
 ```css
 h1, h2, h3, h4, h5, h6 {
@@ -19,17 +19,17 @@ body {
 
 ## Colors
 
-![Colors](https://github.com/spacetelescope/style-guides/blob/master/guides/images/web-style-colors.png)
+![Colors](images/web-style-colors.png)
 
 
 ## Iconography
 
-![st-logo](https://github.com/spacetelescope/style-guides/blob/master/guides/images/stsci-logo.png)
+![st-logo](images/stsci-logo.png)
 
 
 ## Buttons
 
-![Buttons](https://github.com/spacetelescope/style-guides/blob/master/guides/images/web-style-buttons.png)
+![Buttons](images/web-style-buttons.png)
 
 ```css
 .btn-primary, .btn-primary.disabled, .btn-outline-primary:hover,
