@@ -2,7 +2,7 @@
 
 Python is becoming the dominant programming language in astronomy and
 much of the supported software for the Institute is currently written
-or being developed in python.  As such, this style guide is meant to
+or being developed in Python.  As such, this style guide is meant to
 give recommendations for how to develop in Python to produce code that
 is easy to read, to install, and to share.  We strongly recommend that
 new Python projects follow the recommendations in this guide.
@@ -26,6 +26,8 @@ Python 3 is the recommended version of Python, and when possible, we
 strongly recommend developing in the [latest version of
 Python](https://github.com/spacetelescope/style-guides/issues/13).  For more
 detail, see the [software versioning and dependencies guide](software-versioning.md).
+
+If possible, avoid Python 2. Its retirement has a [countdown clock](https://pythonclock.org/).
 
 ## Style
 
@@ -140,7 +142,7 @@ standard Sphinx plugins like
 
 Testing is critical to making sure the software works and that it
 continues to work when the code or dependencies are updated.  The
-following is specific to STScI python packages but general
+following is specific to STScI Python packages but general
 recommendations for the testing infrastructure will be described
 elsewhere along with suggested workflows.
 
