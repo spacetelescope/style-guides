@@ -33,8 +33,8 @@ There are a few options for where you store such, depending on the data size and
 the audience for the code/notebook:
 
 1. Artifactory: this is an enterprise-level data storage solution that STScI has
-   bought into.  Use this for larger datasets for functional work that is
-   primarily used by STScI but not external users.
+   bought into.  You may want to use this for larger datasets for functional work 
+   that is used by STScI but not external users.
 2. Zenodo: this is a data store intended for academic users, and includes
    fully-citable DOIs for arbitrary data sets. Such data sets are versioned and
    accessible on the public internet, and therefore are well-suited for data of
