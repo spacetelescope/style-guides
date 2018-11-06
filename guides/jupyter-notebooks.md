@@ -93,7 +93,8 @@ Be sure to define any terms/common acronyms at the end of your introduction that
 
 ### Loading data
 
-If the user needs to download data to run the tutorial properly, where possible, use [Astroquery]((https://astroquery.readthedocs.io/en/latest/)) (or similar) to retrieve files.
+If the user needs to download data to run the tutorial properly, where possible, use [Astroquery]((https://astroquery.readthedocs.io/en/latest/)) (or similar) to retrieve files. If this is not
+possible, see the [data guide](where-to-put-your-data.md) for other options.
 
 ### File information
 
