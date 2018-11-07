@@ -16,6 +16,7 @@ Notebooks should be portable, that is, they should be designed to work on multip
 
 - Use APIs not file systems to access data. Where at all possible, use libraries such as [`astroquery.mast`](https://astroquery.readthedocs.io/en/latest/) to retrieve the data required for your notebook. Never hard-code a path to a file on e.g. a shared filesystem. See the [data guide](where-to-put-your-data.md) for more detail on how you might implement this.
 - If you need specific packages installed to enable your notebook to execute, define them in a custom [`requirements.txt`](https://pip.pypa.io/en/stable/reference/pip_install/#example-requirements-file) file that can be used to install these dependencies.  Be as specific as possible: sometimes packages make backward incompatible names, so specifying a particular version of dependencies will protect against that.
+- Try to avoid long-running computations or large downloads.  Not all users will have good internet access or a fast computer when they try to run your notebook.  Instead, try to use compact examples that work on smaller portions of a dataset. While this is not always possible given the goals of a particular notebook, it is best to strive for it.  At the very least be sure to warn the user clearly if a notebook will have long runtime/large downloads.
 
 ### Keep good cell discipline
 
