@@ -11,12 +11,15 @@
 
         <!-- Import fonts -->
         <link href="https://fonts.googleapis.com/css?family=Oswald:700|Overpass" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
         <title>Home</title>
 
     </head>
 
     <body>
+
+
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-md fixed-top">
             <a class="navbar-left" href=""><img src='stsci_logo.png' height=35 width=35></a>
@@ -33,41 +36,91 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="">About<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="dropdown-menu">
-                        <a class="dropdown-item" href="">Item 1</a>
-                        <a class="dropdown-item" href="">Item 2</a>
-                        <a class="dropdown-item" href="">Item 3</a>
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle disabled" href="">Dropdown Item</a>
+                        <div class="dropdown-menu">
+                            <a class='dropdown-heading'>Dropdown Heading 1</a>
+                            <a class="dropdown-item" href="">Item 1</a>
+                            <a class="dropdown-item" href="">Item 2</a>
+                            <a class="dropdown-item" href="">Item 3</a>
+                            <div class="dropdown-divider"></div>
+                            <a class='dropdown-heading'>Dropdown Heading 2</a>
+                            <a class="dropdown-item" href="">Item 1</a>
+                            <a class="dropdown-item" href="">Item 2</a>
+                            <a class="dropdown-item" href="">Item 3</a>
+                        </div>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="">Documentation<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
-
             <a class="navbar-right" href="https://github.com/spacetelescope/style-guides" target="_blank"><img src='githublogo.svg' height=25 width=25></a>
         </nav>
+
+
+        <!-- Banner -->
         <div class="banner">
             <img src='background_image.jpg'>
         </div>
 
+
+        <!-- Content -->
         <main role="main" class="container">
-        	<h2>Welcome to the Web Style Guide</h2>
+        	<h1>Welcome to the Web Style Guide</h1>
             <hr>
 
-            <br>
-            This site serves as an example of the STScI Web Style Guide.
+            <p>This site serves as an example of the STScI Web Style Guide.</p>
 
-            <div class="row my-2" style="margin-left: 7rem; margin-right: 7rem;">
-                <div class="col-md-6 py-2"><a class="btn btn-block btn-primary" role="button" href="">Active Button</a></div>
-                <div class="col-md-6 py-2"><a class="btn btn-block btn-primary disabled" role="button" href="">Non-active Button</a></div>
+            <h1> Headings </h1>
+            <h1> Heading 1 </h1>
+            <h2> Heading 2 </h2>
+            <h3> Heading 3 </h3>
+            <h4> Heading 4 </h4>
+            <h5> Heading 5 </h5>
+            <h6> Heading 6 </h6>
+            <p> Paragraph <p>
+
+            <h3> Buttons </h3>
+            <div class="row my-3" style="margin-left: 7rem; margin-right: 7rem;">
+                <div class="col-md-4 py-2"><a class="btn btn-block btn-primary" role="button" href="">Active Button</a></div>
+                <div class="col-md-4 py-2"><a class="btn btn-block btn-primary disabled" role="button" href="">Non-active Button</a></div>
+                <div class="col-md-4 py-2">
+                    <span class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle ml-3" type="button" id="sort_dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#";">Option 1</a>
+                        <a class="dropdown-item" href="#">Option 2</a>
+                        <a class="dropdown-item" href="#">Option 3</a>
+                      </div>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <form class="my-2" action="">
+                    <input type="radio"> Option 1 &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio"> Option 2 &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio"> Option 3 &nbsp;&nbsp;&nbsp;&nbsp;
+                </form>
+            </div>
+
+            <h3> Forms </h3>
+            <div class="d-flex flex-row">
+                <div class="input-group mb-3">
+                  <input id='search_box' type="text" class="form-control" placeholder="Search">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><span class="fas fa-search" aria-hidden="true"></span></span>
+                </div>
             </div>
 
     	</main>
 
+
+        <!-- Footer -->
         <footer class="footer text-center">
             <div class="container">
                 <a href="http://www.stsci.edu/" target="_blank">
-                    <img src='stsci_wordmark_light.png' height=36>
+                    <img src='stsci_wordmark_dark.png' height=36>
                 </a>
             </div>
         </footer>

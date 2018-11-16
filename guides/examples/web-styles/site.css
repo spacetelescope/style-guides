@@ -41,7 +41,7 @@ h1 {
 /*Stop buttons from glowing blue*/
 .btn:focus, .btn.focus, .btn:active:focus, .btn.active:focus, .btn:active,
 .btn.active, .show > .btn.dropdown-toggle:focus {
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 [class*="col-"] {
@@ -62,56 +62,80 @@ h1 {
 
 /* Navbar */
 .dropdown-item:hover{
-    color: #c85108;
-    background-color: #2d353c;
+    color: #c85108 !important;
+    background-color: #2d353c !important;
 }
 
 .dropdown-menu {
-    background-color: #2d353c;
-    border-radius: 0px;
+    background-color: #2d353c !important;
+    border-radius: 0px !important;
 }
 
 .dropdown-menu .dropdown-item {
-    color: white;
+    color: white !important;
 }
 
 .dropdown-menu .dropdown-heading {
-    color: #c85108;
-    text-transform: uppercase;
+    color: #c85108 !important;
+    text-transform: uppercase !important;
 }
 
 .navbar {
-    background-color: black;
+    background-color: black !important;
 }
 
 .navbar-brand {
-    color: white;
-    text-transform: uppercase;
+    color: white !important;
+    text-transform: uppercase !important;
 }
 
 .navbar-left {
-  padding-left:10px;
-  padding-right:10px;
+  padding-left:10px !important;
+  padding-right:10px !important;
 }
 
 .nav-link, .nav-link.disabled {
-    color: #bec4d4;
-    text-transform: uppercase;
+    color: #bec4d4 !important;
+    text-transform: uppercase !important;
 }
 
 /* Change color of dropdown links on hover */
 li:hover .nav-link, .navbar-brand:hover {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* Show the dropdown menu on hover */
 li.dropdown:hover .dropdown-menu {
-    display: block;
+    display: block !important;
 }
 
 
+/* Forms */
+/*Don't let the search bar be super long*/
+.input-group {
+    width: 250px;
+}
 
-/*Hubble image banner*/
+/*Make the search icon look like a button*/
+.input-group-text {
+    background-color: #c85108 !important;
+    border-color: #c85108 !important;
+    color: white !important;
+    border-radius: 0px;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 56px; /* Set the fixed height of the footer here */
+  line-height: 56px; /* Vertically center the text there */
+  background-color: #2d353c;
+}
+
+
+/* Hubble image banner*/
 .banner {
   position: absolute;
   top: 55px;
