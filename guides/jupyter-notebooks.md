@@ -161,9 +161,9 @@ Notebooks should use the standard STScI footer:
 
 Here are some example notebooks that follow this style guide:
 
-- [Kepler Full Frame Images (FFI)](https://github.com/spacetelescope/notebooks/blob/master/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
-- [Kepler Lightcurves](https://github.com/spacetelescope/notebooks/blob/master/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb)
-- [Kepler Target Pixel Files (TPF)](https://github.com/spacetelescope/notebooks/blob/master/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
+- [Kepler Full Frame Images (FFI)](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
+- [Kepler Lightcurves](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb)
+- [Kepler Target Pixel Files (TPF)](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
 
 ### Other Resources
 
