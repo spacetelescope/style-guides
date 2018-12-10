@@ -1,6 +1,6 @@
 # Style Guides
 
-This repository contains styles guides, suggested workflows, and best practices for sofware-related content developed by STScI staff. Style guides are designed to ensure that STScI software, GitHub repositories, documentation, and example analyses follow a consistent style. Suggested workflows provide robust methods for producing work to help aid collaboration and maximize clarity. While we recommend reading the full policies and further material, we highlight some of the most common best practices that are applicable to our software projects.  
+This repository contains styles guides, suggested workflows, and best practices for sofware-related content developed by STScI staff. Style guides are designed to ensure that STScI software, GitHub repositories, documentation, and example analyses follow a consistent style. Suggested workflows provide robust methods for producing work to help aid collaboration and maximize clarity. While we recommend reading the full policies and further material, we highlight some of the most common best practices that are applicable to our software projects.
 
 Currently there are styles guides for:
 
@@ -26,6 +26,8 @@ If you want to suggest changes to this content do the following:
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+3. Add your changes to staging area (`git add myfile`);
+   This can be repeated multiple times.
+4. Commit your changes in staging area (`git commit -m 'Added some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create new Pull Request
