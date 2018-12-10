@@ -14,6 +14,7 @@ In addition, there are the following guides for best practices and workflows:
 - [Git Workflow](guides/git-workflow.md)
 - [Software Versioning](guides/software-versioning.md)
 - [Python Packaging](guides/python-package.md)
+- [Testing Python Packages](guides/python-testing.md)
 
 
 ### Related work
