@@ -132,4 +132,32 @@ Note: If this package is to be installed nightly internally in conda-dev then "m
   $ git push origin 2.2.0a
   ```
 
+#### Make a bug fix release
 
+ This section explains how to do a bug-fix (or hot-fix) release. Development on the master branch towards v 2.2.0 has been going on for a while. A particularly vicious bug was discovered in 2.1.3 and needs to be fixed immediately. The bug applies also to code on the master branch so it is fixed there and merged through a PR. The commit hash is `a266119d38`. This commit needs to be applied to the already released v 2.1.3 and released through v 2.1.4.
+
+
+1. Create a branch for the patch release off the 2.1.3x release branch.
+
+  ```
+  git checkout -b 2.1.4_patch origin/2.1.3x
+  ```
+2. Apply the commit to this branch using the `cherry-pick` command. If more than one commits are necessary apply all of them to the new branch.
+
+  ```
+  git cherry-pick -x a266119d38
+  
+  ```
+
+In some cases this commit may have more than one parent commits. Then it has to be determined which one was the immediate parent and pass this to the cherry-pick command which becomes (first parent is used):
+
+  ```
+  git cherry-pick -x -m 1 a266119d38 
+  ```
+
+What changes are going in after a `cherry-pick` command can be verified with `git show`.
+
+In some cases cherry picking commits may result in conflicts. These should be fixed the usual way.
+
+3. Push the branch to the repository, create a PR and after tests pass merge with the release branch. The tip of the release branch now has the new patch release. Create a PR to merge with the "stable" branch and tag the new release with tag `1.2.4` on "stable". These are the steps 4 and 5 in the previous section.
+ 
