@@ -12,17 +12,18 @@ This document aims to facilitate the process of releasing a package by providing
 
 There are certain activities which are common for all workflows and are simply good practicies when releasing a package.
 
-1. Version the package using semantic versioning. Details can be found in the
-[versioning guide ](https://github.com/spacetelescope/style-guides/blob/master/guides/software-versioning.md).
+1. Version the package using semantic versioning.
+   Details can be found in the
+   [versioning guide ](https://github.com/spacetelescope/style-guides/blob/master/guides/software-versioning.md).
 
-Before a release update the version of the package to the intended version number. After a release is tagged in the repository and before going back to normal development change the version string in setup.py to the next release, followed by dev. For example, if v 2.1.3 is to be released and the next version will be 2.2.0, before a release is made, set the version string in setup.py to
-version = “2.1.3”. After the release is done, set the version string to version=”2.2.0.dev”.
+   Before a release update the version of the package to the intended version number. After a release is tagged in the repository and before going back to normal development change the version string in setup.py to the next release, followed by dev. For example, if v 2.1.3 is to be released and the next version will be 2.2.0, before a release is made, set the version string in setup.py to
+   version = “2.1.3”. After the release is done, set the version string to version=”2.2.0.dev”.
 
-[PEP440](https://www.python.org/dev/peps/pep-0440) describes python package versioning conventions.
+   [PEP440](https://www.python.org/dev/peps/pep-0440) describes python package versioning conventions.
 
 2. Maintain a change log for the package.
 
-It is useful to users if the package has a change log. Many packages maintain a file at the top level, called CHANGES.rst. This file should have a section for each released version and possibly subsections for new features, bug fixes and API changes. Examples cna be found in [astropy](https://github.com/astropy/astropy/blob/master/CHANGES.rst) and [jwst](https://github.com/spacetelescope/jwst/blob/master/CHANGES.rst).
+   It is useful to users if the package has a change log. Many packages maintain a file at the top level, called CHANGES.rst. This file should have a section for each released version and possibly subsections for new features, bug fixes and API changes. Examples cna be found in [astropy](https://github.com/astropy/astropy/blob/master/CHANGES.rst) and [jwst](https://github.com/spacetelescope/jwst/blob/master/CHANGES.rst).
 
 3. When preparing a release use branches and pull requests (PR) following the [Workflow for contributing to a git](https://github.com/spacetelescope/style-guides/blob/master/guides/git-workflow.md).
 
