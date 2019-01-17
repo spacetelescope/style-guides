@@ -1,4 +1,4 @@
-# Release And Maintain a Package Using GIT
+# Release And Maintain a Package Using Git
 
 ## Introduction
 
