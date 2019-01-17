@@ -60,7 +60,7 @@ There are certain activities which are common for all workflows and are simply g
 
 ## Specific release procedures
 
-The following two sections provide specific instructions for releasing a python package in the two main use cases listed above. it is assumed the person doing the release uses the spacetelescope repository directly as a working directory. This means the main repository at spaetelescope nneds to be cloned and that "origin" points to spacetelescope, not to the person's fork.
+The following two sections provide specific instructions for releasing a python package in the two main use cases listed above. it is assumed the person doing the release uses the `spacetelescope` repository directly as a working directory. This means the main repository at `spacetelescope` needs to be cloned and that "origin" points to `spacetelescope`, not to the person's fork.
 
   ```
   $ git clone git@github.com:spacetelescope/mypackage.git
