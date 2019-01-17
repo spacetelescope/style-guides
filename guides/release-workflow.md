@@ -23,7 +23,7 @@ There are certain activities which are common for all workflows and are simply g
 
 2. Maintain a change log for the package.
 
-   It is useful to users if the package has a change log. Many packages maintain a file at the top level, called CHANGES.rst. This file should have a section for each released version and possibly subsections for new features, bug fixes and API changes. Examples cna be found in [astropy](https://github.com/astropy/astropy/blob/master/CHANGES.rst) and [jwst](https://github.com/spacetelescope/jwst/blob/master/CHANGES.rst).
+   It is useful to users if the package has a change log. Many packages maintain a file at the top level, called CHANGES.rst. This file should have a section for each released version and possibly subsections for new features, bug fixes and API changes. Examples can be found in [astropy](https://github.com/astropy/astropy/blob/master/CHANGES.rst) and [jwst](https://github.com/spacetelescope/jwst/blob/master/CHANGES.rst).
 
 3. When preparing a release use branches and pull requests (PR) following the [Workflow for contributing to a git](https://github.com/spacetelescope/style-guides/blob/master/guides/git-workflow.md).
 
