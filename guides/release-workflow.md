@@ -64,6 +64,7 @@ The following two sections provide specific instructions for releasing a python 
 
   ```
   $ git clone git@github.com:spacetelescope/mypackage.git
+  $ cd mypackage
   $ git remote -v
     origin git@github.com:spacetelescope/mypackage.git (fetch)
     origin git@github.com:spacetelescope/mypackage.git (pull)
