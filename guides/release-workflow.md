@@ -56,7 +56,7 @@ There are certain activities which are common for all workflows and are simply g
    $ twine upload dist/*
    ```
 
-   `Note:` The `Project Description` on PyPi is populated by the `Classifiers` in setup.py. It is useful to populate those accurately and completely. The `long dscription` field is used to populate the "Project Description" on PyPi.
+   `Note:` The `Project Description` on PyPi is populated by the `Classifiers` in setup.py. It is useful to populate those accurately and completely. The `long description` field is used to populate the "Project Description" on PyPi.
 
 ## Specific release procedures
 
