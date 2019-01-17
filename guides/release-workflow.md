@@ -92,7 +92,7 @@ The specific steps are:
 
 2. Prepare a release branch.
 
-   Make sure you are on the master branch. Make a branch for the release. Name the branch 2.1.3x. Always use a letter at the end of the branch name so that the version number (2.1.3) can be used later as a tag as duplicae names are harmful.
+   Make sure you are on the master branch. Make a branch for the release. Name the branch 2.1.3x. Always use a letter at the end of the branch name so that the version number (2.1.3) can be used later as a tag as duplicate names are harmful.
 
    ```
    $ git remote -v
