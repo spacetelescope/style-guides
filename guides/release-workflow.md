@@ -108,7 +108,7 @@ The specific steps are:
    $ git checkout 2.1.3x
    ```
 
-3. Push the 2.1.3x branch to spacetelescope and create a PR to the "stable" branch. Note, that origin below refers to the spacetelescope repository. When tests pass merge with "stable".
+3. Push the 2.1.3x branch to `spacetelescope` and create a PR to the "stable" branch. Note, that origin below refers to the `spacetelescope` repository. When tests pass merge with "stable".
 
    `git push origin 2.1.3x`
 
