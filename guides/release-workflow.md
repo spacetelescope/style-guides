@@ -76,7 +76,7 @@ The following two sections provide specific instructions for releasing a python 
 In this case all work is done on the `master` branch. Old releases are not maintained. When the code is ready for release, set the version in setup.py and set the date of the release in CHANGES.rst. Tag the release on master.
 
   ```
-  git checkout master
+  $ git checkout master
   git status
   On branch master
   ```
