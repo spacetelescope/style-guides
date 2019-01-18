@@ -6,7 +6,7 @@ This document aims to facilitate the process of releasing a package by providing
 good practices and possible workflows and instructions for managing a release for 
 a code repository. Although the document focuses on and uses python packages as 
 examples, many of the “good practices” are general and apply to software using any
-language. Two kindsof workflow are discussed. Which one to use depends on whether 
+language. Two kinds of workflow are discussed. Which one to use depends on whether 
 it is necessary to maintain an older versions of the package or not.
 
 1. A package is developed on the master branch and released from the master branch.
