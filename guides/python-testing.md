@@ -43,8 +43,8 @@ https://docs.pytest.org/en/latest/goodpractices.html .
 
 In theory, there are many kinds of software testing. For instance,
 unit testing, integration testing, regression testing, etc. Currently, this
-document only focuses on unit and regression tests, which are usually
-"shipped" with the package they are tied to.
+document focuses on unit and regression tests (usually "shipped" with the
+package they are tied to), as well as continuous integration testing.
 
 * Unit test: Tests that the functionality is correct. Runs per push event
   (e.g., commit or merge).
