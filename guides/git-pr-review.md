@@ -56,9 +56,12 @@ and bisecting if a bug is added and found later on).
 The code should also be reviewed for style, maintainability, and to make sure
 it fits into the framework of the code in the GitHub repository. It would be
 better to maintain similarity to current code unless there is a need to make
-changes to the repository code framework.  Automated PEP 8 style checking
-should happen as part of the CI / automated test infrastructure.  (ref:
-https://github.com/spacetelescope/style-guides/issues/73)
+changes to the repository code framework.  
+
+Python code should follow the [Python style
+guide](https://github.com/spacetelescope/style-guides/blob/master/guides/python.md).
+Also, automated PEP 8 style checking should happen as part of the 
+[CI / automated test infrastructure](https://github.com/spacetelescope/style-guides/issues/73).
 
 If the code appears to have bugs or implementation issues, then stop now and
 ask for clarification from the author (and maybe get them to make code
