@@ -1,6 +1,7 @@
 # GitHub Pull Request Review ("Code Review") 
 
-### Introduction
+## Introduction
+
 Ideally all code produced at the institute is reviewed by at least one other
 staff member.  This is a standard practice in the software industry, as code
 (like all writing) benefits greatly from editing and multiple perspectives.  At
@@ -23,7 +24,7 @@ and abide by our [Code of
 Conduct](https://github.com/spacetelescope/style-guides/blob/master/CODE_OF_CONDUCT.md)
 that we follow.
 
-### Who Should Review
+## Who Should Review
 
 There are several groups of people who might be interested in reviewing a PR.
 Members of the development team, package maintainers (GitHub repository
@@ -50,9 +51,9 @@ reviewed on reasonable timescales and with a clear understanding of the
 responsibility. Put another way: code review is a social contract and we must
 agree on how it works for it to work well!
 
-### PR Review Steps
+## PR Review Steps
 
-#### 1. Review the PR and Issue
+### 1. Review the PR and Issue
 
 Read through the comments in the PR to see what was done and the discussion
 people have had on there. Confirm the GitHub "fixes" or "closes" magic words
@@ -72,7 +73,7 @@ If the PR does not appear to fix/implement the issue or the description is not
 clear in the PR text, then stop here and ask questions. Document any new
 understanding or thoughts in the PR for future reference.
 
-#### 2. Review the code
+### 2. Review the code
 
 Look through the code and see if it addresses the items in the PR and any
 related issue comments.  It should answer only the issue and not other bugs
@@ -98,7 +99,7 @@ ask for clarification from the author (and maybe get them to make code
 changes). Where possible, use in-line comments in the GitHub "Files changed"
 interface to give the PR author specific and actionable suggestions.
 
-#### 3. Check and Run the tests
+### 3. Check and Run the tests
 
 Note: all packages following these style guides should use continuous
 integration (CI) as thoroughly as practical to simplify the testing process.
@@ -121,7 +122,7 @@ to fix the code so the tests pass.
 
 If more tests are needed, request them from the author.
 
-#### 4. Review the documentation
+### 4. Review the documentation
 
 Read through the relevant portion of the documentation to see if it is
 sufficient or correct given the changes in the PR.  Does more documentation
@@ -138,7 +139,7 @@ documentation format followed?`
 Is a change log entry necessary? If yes, was it included in the right place?
 
 
-#### 5. Run the branch locally
+### 5. Run the branch locally
 
 Local testing is not always necessary if you are confident that the changes
 the PR introduced are *thoroughly* tested via the CI tests (either via new tests
