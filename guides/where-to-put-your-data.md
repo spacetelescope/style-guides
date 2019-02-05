@@ -32,9 +32,10 @@ of files, so e.g. databases are beyond the scope of this guide.
 There are a few options for where you store such, depending on the data size and
 the audience for the code/notebook:
 
-1. Box: the institute uses Box for the storage of many datasets and this is an
-   acceptable solution for intermediate data storage. The data maybe shared out
-   (including for automated tests) by creating a direct link to the data file. To
+1. Box: the institute uses Box as a file-sharing solution, but when used with
+   static links it is also a useful (and ITSD-sanctioned) solution for
+   intermediate data storage. The data may be shared (including for automated 
+   tests) by creating a direct static link to the data file. To
    obtain a direct link, select "Share" beside the file in Box, click on the gear
    icon (for Settings) and copy the URL at the bottom in the "Direct Link"
    section.
