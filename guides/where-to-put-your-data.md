@@ -32,14 +32,20 @@ of files, so e.g. databases are beyond the scope of this guide.
 There are a few options for where you store such, depending on the data size and
 the audience for the code/notebook:
 
-1. Artifactory: this is an enterprise-level data storage solution that STScI has
+1. Box: the institute uses Box for the storage of many datasets and this is an
+   acceptable solution for intermediate data storage. The data maybe shared out
+   (including for automated tests) by creating a direct link to the data file. To
+   obtain a direct link, select "Share" beside the file in Box, click on the gear
+   icon (for Settings) and copy the URL at the bottom in the "Direct Link"
+   section.
+2. Artifactory: this is an enterprise-level data storage solution that STScI has
    bought into.  You may want to use this for larger datasets for functional work 
    that is used by STScI but not external users.
-2. Zenodo: this is a data store intended for academic users, and includes
+3. Zenodo: this is a data store intended for academic users, and includes
    fully-citable DOIs for arbitrary data sets. Such data sets are versioned and
    accessible on the public internet, and therefore are well-suited for data of
    interest to astronomy researchers or other public audiences.
-3. `git lfs` + cloud storage: Git LFS is an extension that allows files in `git`
+4. `git lfs` + cloud storage: Git LFS is an extension that allows files in `git`
    to be stored outside the code repository (e.g. in a cloud service like Amazon
    S3)., but still have links to those files along side the code. This is a good
    choice for projects where the above options do not fit, but this comes with
