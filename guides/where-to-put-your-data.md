@@ -45,12 +45,10 @@ the audience for the code/notebook:
    fully-citable DOIs for arbitrary data sets. Such data sets are versioned and
    accessible on the public internet, and therefore are well-suited for data of
    interest to astronomy researchers or other public audiences.
-4. `git lfs` + cloud storage: Git LFS is an extension that allows files in `git`
-   to be stored outside the code repository (e.g. in a cloud service like Amazon
-   S3)., but still have links to those files along side the code. This is a good
-   choice for projects where the above options do not fit, but this comes with
-   added management overhead and actual dollar cost that is the responsibility
-   of the code/notebook maintainer.
+
+There are a variety of other possibilities (e.g. `git lfs` + cloud storage),
+but in the name of keeping uniformity at the institute, the above are the
+primary recommendations.
 
 
 ## Python
