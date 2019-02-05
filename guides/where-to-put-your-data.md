@@ -35,10 +35,8 @@ the audience for the code/notebook:
 1. Box: the institute uses Box as a file-sharing solution, but when used with
    static links it is also a useful (and ITSD-sanctioned) solution for
    intermediate data storage. The data may be shared (including for automated 
-   tests) by creating a direct static link to the data file. To
-   obtain a direct link, select "Share" beside the file in Box, click on the gear
-   icon (for Settings) and copy the URL at the bottom in the "Direct Link"
-   section.
+   tests) by creating a direct static link to the data file. Detailed 
+   instructions for this are below.
 2. Artifactory: this is an enterprise-level data storage solution that STScI has
    bought into.  You may want to use this for larger datasets for functional work 
    that is used by STScI but not external users.
@@ -50,6 +48,31 @@ the audience for the code/notebook:
 There are a variety of other possibilities (e.g. `git lfs` + cloud storage),
 but in the name of keeping uniformity at the institute, the above are the
 primary recommendations.
+
+
+#### Obtaining Static Box Links
+
+Note that if you are making a static link publicly visible, it is best practice
+to use a shared folder that is managed by a shared data account rather than
+being tied to your user account.  This is also helpful to prevent thiese files
+from counting against your account's size restrictions.  Talk to ITSD or your 
+team to see what, if any shared Box folder you might have.
+
+1. Go to the box web page for a box folder 
+   (https://stsci.app.box.com/folder/######) and upload your file.
+2. Click on the "Share" button for the file you just uploaded.
+3. In the dropdown, change the permissions to "People with the link" (this may be default depending on your settings)
+4. Click on the "gear" icon by "Shared Link"
+5. Make sure "Allow Download" is checked
+6. You should see a "Direct Link" field at the bottom of the panel. This is the
+   link to the file. 
+
+If you need the as-uploaded filename you’ll need to look in the
+"Content-Disposition" header of the response. In the future there may be a URL
+redirection service to make the links more human-readable, but at the time of
+this writing that service is not yet available.
+
+
 
 
 ## Python
