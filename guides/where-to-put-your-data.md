@@ -59,7 +59,7 @@ from counting against your account's size restrictions.  Talk to ITSD or your
 team to see what, if any shared Box folder you might have.
 
 1. Go to the box web page for a box folder 
-   (https://stsci.app.box.com/folder/######) and upload your file.
+   (`https://stsci.app.box.com/folder/######`) and upload your file.
 2. Click on the "Share" button for the file you just uploaded.
 3. In the dropdown, change the permissions to "People with the link" (this may be default depending on your settings)
 4. Click on the "gear" icon by "Shared Link"
