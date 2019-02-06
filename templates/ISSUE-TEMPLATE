@@ -1,0 +1,25 @@
+## Describe the bug / feature
+
+  <!--- If describing a bug, tell us what happens instead of the expected behavior -->
+  <!--- If suggesting a change/improvement, explain the difference from current behavior -->
+  <!--- Include all steps to reproduce the bug -->
+  <!--- if a Traceback is available, include the complete Traceback in the Issue -->
+
+## Possible Solution
+
+  <!--- Not obligatory, but suggest a fix/reason for the bug, -->
+  <!--- or ideas how to implement the addition or change -->
+
+## Context
+
+  <!--- How has this issue affected you? What are you trying to accomplish? -->
+  <!--- Providing context helps us come up with a solution that is most useful in the real world -->
+  <!--- If bug is data specific, please provide any relevant information about the data, or a link to an example, if possible. -->
+
+## Your Environment
+
+<!--- Include as many relevant details about the environment you experienced the bug in -->
+
+  * Package Version used:
+  * Operating System and version
+  * Include output of conda list
