@@ -75,6 +75,17 @@ We expect all STScI projects to adopt a code of conduct that ensures a productiv
 
 When possible, include contributing guidelines in your repository either as a section named `Contributing` in the README or in a dedicated file named `CONTRIBUTING.md`
 
+### Issue and PR Templates
+
+Each repository should have an Issue Template and a PR Template. To include
+these, copy the templates out of [style guide template
+directory](https://github.com/spacetelescope/style-guides/tree/master/templates),
+place into the root of the GitHub repository and call the files
+ISSUE_TEMPLATE and PULL_REQUEST_TEMPLATE.  
+
+More information is found on the [GitHub
+website](https://help.github.com/articles/about-issue-and-pull-request-templates/)
+
 ### Releases
 
 Where possible use [GitHub releases](https://help.github.com/articles/creating-releases/) following [SemVer](https://semver.org/) conventions.
