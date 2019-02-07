@@ -61,7 +61,20 @@ should be supported. However, two good rules of thumb are:
   community's uptake is available, that is preferred over this rule of thumb.
 * Only versions supported by the dependency's maintainers should be supported
   by the dependent, unless the dependent software's maintainer is willing to
-  take complete responsibility for support of the old version of the dependency
+  take complete responsibility for support of the old version of the dependency.
+
+Building these rules into the test infrastructure for the package can be a very
+useful way to catch changes in dependencies that may affect your package. 
+
+One final guideline is that it is generally not the responsibility of
+individual package authors to to ensure a reproducible scientific environment.
+That is, it is up to *users* of our packages to document package dependency
+versions if they need to create a reproducible environment (e.g., to reproduce
+a scientific result) in the future. So, if they install a specific version of
+our package, it is up to them to record versions of all their dependencies as
+well. While as an institute we may wish to provide tools or documentation on
+how users might do this, any *particular* package need not aim to provide a
+specific reproducible environment.
 
 Minimal pinning of dependencies should happen and should likely only be `>=`
 type of dependencies (e.g., `numpy>=1.12`) as opposed to pinning a dependency
@@ -76,15 +89,6 @@ released and results in a bug in our package then the point-release should be
 created to pin "numpy<=1.13" and an issue be created in the package to fix the
 error. It is not *expected* that this should happen as dependencies should use
 deprecation so there is a period of time over which changes can be made.
-
-Building these rules into the test infrastructure for the package can be a very
-useful way to catch changes in dependencies that may affect your package. 
-
-One final thought is that it is up to the user of our packages to document
-package dependency versions if they need to create a reproducible environment
-(e.g., to reproduce a scientific result) in the future. So, if they install a
-specific version of our package, it is up to them to confirm the version of all
-their dependencies as well.
 
 ## Python
 
