@@ -13,13 +13,3 @@ Fixes: <!--- add github link -->
 ## Screenshots (if appropriate):
 
 
-## Repo Maintainer Checklist:
-
-<!--- Repo Maintainer... Go over the following points, and put an `x` in  --> 
-<!---                    all the boxes that apply.                        -->
-
-- [ ] PR does what it is supposed to do (based on PR and/or issue comments)
-- [ ] Code was reviewed for style, mainatinability, and accuracy
-- [ ] All tests ran to completion and were successful
-- [ ] Documentation is still accurate and complete
-- [ ] Branch runs locally (if needed)
