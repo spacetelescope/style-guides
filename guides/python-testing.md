@@ -83,7 +83,7 @@ a lot of network hits, which might exceed time out quota of certain services.
 
 See https://docs.pytest.org/en/latest/skipping.html .
 
-### Testing with outside dependancies
+### Testing with outside dependencies
 
 If your test calls something that you do not care about (e.g., some database
 access that is not part of your package), you can "mock" that portion in your
