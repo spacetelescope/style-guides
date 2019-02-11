@@ -5,11 +5,7 @@ packages. This document is not to be followed exactly word-by-word, but rather
 it lays out multiple things you should consider. Feel free to adopt and adapt
 as you deem necessary.
 
-## Do I need to test my Python package?
-
-Yes. Next question.
-
-## What should I use to run my tests?
+## Framework for python tests
 
 [pytest](https://docs.pytest.org/en/latest/) is recommended.
 There are many ``pytest`` plugins that you could utilize to get the most
@@ -29,9 +25,9 @@ out of your tests. Example of several useful ones:
 * [ci-watson](https://github.com/spacetelescope/ci_watson) for functionality
   related to STScI Jenkins and Artifactory usage.
 
-## Where should I put my tests?
+## Testing Layout
 
-See the templates in Python Packaging section.
+See the templates in [Python Packaging section](https://github.com/spacetelescope/style-guides/blob/master/guides/python-package.md).
 
 Template aside, there is also the question of whether you want to bundle the
 tests with your package or not. While bundling allows users to test their
@@ -39,7 +35,7 @@ installations, it also increases the package size. For more information,
 see "Choosing a test layout / import rules" in
 https://docs.pytest.org/en/latest/goodpractices.html .
 
-## What should I test?
+## Types of Tests
 
 In theory, there are many kinds of software testing. For instance,
 unit testing, integration testing, regression testing, etc. Currently, this
@@ -87,7 +83,7 @@ a lot of network hits, which might exceed time out quota of certain services.
 
 See https://docs.pytest.org/en/latest/skipping.html .
 
-### Testing with the impossible
+### Testing with outside dependancies
 
 If your test calls something that you do not care about (e.g., some database
 access that is not part of your package), you can "mock" that portion in your
@@ -126,13 +122,13 @@ For GitHub, here are some services available:
 
 For STScI GitLab instances, please contact ITSD.
 
-## How do I show off my test status?
+## Displaying test status
 
 Each of the different CI services provide badges that you can add to your
 package repository's read-me file, which GitHub would render nicely.
 For example, see https://github.com/spacetelescope/jwst/blob/master/README.md .
 
-## Can I use Python to test my non-Python package?
+## Testing non-Python package
 
-Yes. See [HSTCAL](https://github.com/spacetelescope/hstcal), which is a C
+See [HSTCAL](https://github.com/spacetelescope/hstcal), which is a C
 pipeline but utilizes ``pytest`` framework with Python test scripts.
