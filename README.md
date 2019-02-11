@@ -9,12 +9,15 @@ Currently there are styles guides for:
 - [Python](guides/python.md)
 - [Accessibility](guides/accessibility.md)
 - [Security](guides/security.md)
+- [Web Pages](guides/web-styles.md)
 
 In addition, there are the following guides for best practices and workflows:
 - [Git Workflow](guides/git-workflow.md)
+- [PR Review](guides/git-pr-review.md)
 - [Software Versioning](guides/software-versioning.md)
 - [Python Packaging](guides/python-package.md)
 - [Testing Python Packages](guides/python-testing.md)
+- [Storing Data](guides/where-to-put-your-data.md)
 
 
 ### Related work
