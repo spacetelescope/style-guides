@@ -16,6 +16,7 @@ In addition, there are the following guides for best practices and workflows:
 - [PR Review](guides/git-pr-review.md)
 - [Software Versioning](guides/software-versioning.md)
 - [Python Packaging](guides/python-package.md)
+- [Testing Python Packages](guides/python-testing.md)
 - [Storing Data](guides/where-to-put-your-data.md)
 
 
