@@ -43,7 +43,7 @@ version. This should be enforced by automated tools where practical (e.g.,
 the Python package templates require a "release" tag to be set, and scripts
 automatically use that to append "dev" to the version).
 
-### DOI For Software Releases
+### DOI for software releases
 
 Our open source software available to the public should include a DOI (Digitial
 Object Identifier) that has now become the standard for journal articles.
