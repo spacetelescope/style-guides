@@ -48,12 +48,11 @@ automatically use that to append "dev" to the version).
 Our open source software available to the public should include a DOI (Digitial
 Object Identifier) that has now become the standard for journal articles.
 Including a DOI for each released verison of software will enable (and
-encourage!) the public to reference our software and even more the specific
-version they used.  [Zenoodo](https://zenodo.org) enables the automatic DOI
+encourage!) the public to reference our software and even more, the specific
+version they used.  [Zenodo](https://zenodo.org) enables the automatic DOI
 creation when a release is done on GitHub.  The place to start is by [logging
 in to Zenodo](https://zenodo.org/login/?next=%2Faccount%2Fsettings%2Fgithub%2F). There
-is some discussion of how to do it [on a GitHub guide](https://guides.github.com/activities/citable-code/).
-
+is a discussion of how to do it [on a GitHub guide](https://guides.github.com/activities/citable-code/).
 
 ### Software others build
 
