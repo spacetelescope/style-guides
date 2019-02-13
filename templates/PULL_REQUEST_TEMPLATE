@@ -2,14 +2,15 @@
 
 <!--- Describe your changes in detail -->
 
-Fixes: <!--- add github link -->
+Fixes: <!--- add github link to issue -->
 
 ## How Has This Been Tested?
 
 <!--- Please describe how you tested your changes. -->
-<!--- Include details of your testing environment, and the tests you ran to -->
-<!--- see how your change affects other areas of the code, etc. -->
+
+[ ] Have the unit tests for the package passed in your environment?
+[ ] If appropriate, have the regression tests affected by your code change passed?
 
 ## Screenshots (if appropriate):
 
-
+<!--- This section can be deleted if it is not appropriate for the PR or repo -->
