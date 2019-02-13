@@ -122,6 +122,22 @@ For GitHub, here are some services available:
 
 For STScI GitLab instances, please contact ITSD.
 
+## Automated test code coverage
+
+There are several packages available to quantify the test-code coverage of the
+GitHub repository code.  One is [Coveralls](https://coveralls.io) and some
+packages at STScI are using this as part of the CI automated procedure. A
+second is [Codecov](https://codecov.io/) that is very similar to Coveralls.
+There are other STScI GitHub repositories that are using Codecov. 
+
+There are benefits to both packages and one of them should be setup in each
+repository to quantify the test code coverage and to encourage writing test
+code. There appear to be several benefits to using Codecov (over Coveralls)
+including a cleaner method to automatically report test-code coverage test on a
+PR within GitHub. So, it is encouraged that each STScI repository include
+Codecov coverage tests as part of the automated CI in Travis or Jenkins.
+
+
 ## Displaying test status
 
 Each of the different CI services provide badges that you can add to your
