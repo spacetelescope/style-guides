@@ -1,0 +1,31 @@
+## Describe the bug / feature
+
+  <!--- If describing a bug:                                                          -->
+  <!----   - tell us what happened instead of the expected behavior                   -->       
+  <!---    - include the steps to reproduce the bug                                   -->       
+  <!---    - if a Traceback is available, include the complete Traceback in the Issue -->       
+  <!---    - include as many relevant details about the environment                   -->
+  <!---        - package version used                                                 -->
+  <!---        - operating system and version                                         -->
+  <!---        - versions of other packages in conda or python virtual environment    -->
+
+  <!--- If a change/improvement/feature                                               -->
+  <!---    - explain the idea and/or the difference from current behavior             -->
+
+## Possible Solution
+
+  <!--- Not obligatory, but suggest a fix/reason for the bug,                         -->       
+  <!--- or ideas how to implement the addition or change (other code, article etc)    -->       
+
+## Context
+
+  <!--- Providing context helps us come up with a solution that is most useful in     -->
+  <!--- the real world.                                                               -->       
+
+  <!--- If a bug:                                                                     -->
+  <!---    - What are you trying to accomplish?                                       -->       
+  <!---    - If it is data specific, please provide any relevant information about    -->
+  <!---      the data, or a link to an example, if possible.                          -->       
+
+  <!--- If a new feature:                                                             -->       
+  <!---    - How will this feature benefit the field?                                 -->       
