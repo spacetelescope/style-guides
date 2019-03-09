@@ -132,7 +132,8 @@ There are other STScI GitHub repositories that are using Codecov.
 
 There are benefits to both packages and one of them should be setup in each
 repository to quantify the test code coverage and to encourage writing test
-code. There appear to be several benefits to using Codecov (over Coveralls)
+code. At this time, Codecov is the recommended service over Coveralls.
+There appear to be several benefits to using Codecov (over Coveralls)
 including a cleaner method to automatically report test-code coverage test on a
 PR within GitHub. So, it is encouraged that each STScI repository include
 Codecov coverage tests as part of the automated CI in Travis or Jenkins.
