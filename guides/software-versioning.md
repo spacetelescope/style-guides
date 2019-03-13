@@ -43,6 +43,16 @@ version. This should be enforced by automated tools where practical (e.g.,
 the Python package templates require a "release" tag to be set, and scripts
 automatically use that to append "dev" to the version).
 
+### DOI for software releases
+
+Our open source software available to the public should include a DOI (Digitial
+Object Identifier) that has now become the standard for journal articles.
+Including a DOI for each released verison of software will enable (and
+encourage!) the public to reference our software and even more, the specific
+version they used.  [Zenodo](https://zenodo.org) enables the automatic DOI
+creation when a release is done on GitHub.  Follow the discussion [on the
+GitHub guide](https://guides.github.com/activities/citable-code/) in order to
+use DOI's for your code releases.
 
 ### Software others build
 
