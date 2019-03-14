@@ -43,7 +43,18 @@ version. This should be enforced by automated tools where practical (e.g.,
 the Python package templates require a "release" tag to be set, and scripts
 automatically use that to append "dev" to the version).
 
-### DOI for software releases
+### Citing Software 
+
+#### How-To-Cite Instructions
+
+For users of our packages to be able to correctly cite our packages in their 
+publications a CITATION file should be included in the top level of the GitHub
+package that gives instructions on how the package should be cited in articles.
+An example set of text can be found in the 
+[CITATION](https://github.com/spacetelescope/style-guides/blob/master/templates/CITATION)
+file in this repository.
+
+#### DOI for software releases
 
 Our open source software available to the public should include a DOI (Digitial
 Object Identifier) that has now become the standard for journal articles.
@@ -53,6 +64,8 @@ version they used.  [Zenodo](https://zenodo.org) enables the automatic DOI
 creation when a release is done on GitHub.  Follow the discussion [on the
 GitHub guide](https://guides.github.com/activities/citable-code/) in order to
 use DOI's for your code releases.
+
+
 
 ### Software others build
 
