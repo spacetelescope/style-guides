@@ -4,7 +4,7 @@
 The following describes a workflow for contributing software to an open source repository on GitHub under the `spacetelescope` organization (hereby referred to as the "`spacetelescope` repository". It involves forking the `spacetelescope` repository, developing changes on personal branches, and opening pull requests through GitHub.
 
 ### Opening a GitHub Issue
-Before contributing, you should determine if the eventual change is significant enough to warrant a GitHub issue; if you think that this change will be solving a significant problem or adding a providing a significant enhancement to the project, then it would be advantageous to open an issue under the main GitHub repository. This will allow both contributors and repository maintainers to keep track of the project and capture any needed context of the partiuclar change. Any appropriate individuals should be assigned to the issue, and any appropriate label(s) should be tagged.
+Before contributing, you should determine if the eventual change is significant enough to warrant a GitHub issue; if you think that this change will be solving a significant problem or adding a providing a significant enhancement to the project, then it would be advantageous to open an issue under the main GitHub repository. This will allow both contributors and repository maintainers to keep track of the project and capture any needed context of the particular change. Any appropriate individuals should be assigned to the issue, and any appropriate label(s) should be tagged.
 
 ### Workflow
 Any changes that you want to eventually make to the `master` branch of the `spacetelescope` repository should be done through a workflow where you [create a fork](https://help.github.com/articles/fork-a-repo/) and work on a personal branch before submitting those changes to be reviewed through a pull request. Instructions on how to do those things can be found below:
@@ -25,7 +25,7 @@ Any changes that you want to eventually make to the `master` branch of the `spac
 
 5. Push the branch to the GitHub repository for the personal fork with `git push origin <branchname>`.
 
-6. On the `spacetelescope` repository, create a pull request for the recently pushed branch.  You will want to set the base fork pointing to `spacetelescope:master` and the `head` fork pointing to the branch on your personal fork (i.e. `username:branchname`).  Note that if the branch is still under heavy development, you can put `WIP:` at the beginning of the pull request title to signify that the pull request is still a work in progress (i.e. `WIP: Example Pull Request Title`).  Not until the `WIP:` tag is explicitly removed will the pull request be deemed 'mergable'.
+6. On the `spacetelescope` repository, create a pull request for the recently pushed branch.  You will want to set the base fork pointing to `spacetelescope:master` and the `head` fork pointing to the branch on your personal fork (i.e. `username:branchname`).  Note that if the branch is still under heavy development, you can put `WIP:` at the beginning of the pull request title to signify that the pull request is still a work in progress (i.e. `WIP: Example Pull Request Title`).  Not until the `WIP:` tag is explicitly removed will the pull request be deemed 'mergeable'.
 
 7. Assign the pull request a reviewer, selecting a maintainer of the `spacetelescope` repository.  They will review your pull request and either accept the request and merge, or ask for additional changes.
 
