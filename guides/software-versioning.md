@@ -48,11 +48,24 @@ automatically use that to append "dev" to the version).
 #### How-To-Cite Instructions
 
 For users of our packages to be able to correctly cite our packages in their 
-publications a CITATION file should be included in the top level of the GitHub
+publications a `CITATION` file should be included in the top level of the GitHub
 package that gives instructions on how the package should be cited in articles.
 An example set of text can be found in the 
 [CITATION](https://github.com/spacetelescope/style-guides/blob/master/templates/CITATION)
 file in this repository.
+
+The `__init__()` method in the top level directory of the package should contain
+code that creates attributes `__citation__` and `__bibtex__` which is text
+from the `CITATION` file. This can be accomplished by including:
+
+```python
+# Set the bibtex entry to the article referenced in CITATION.
+def _get_bibtex():
+    citation_file = os.path.join(os.path.dirname(__file__), 'CITATION')
+
+    with open(citation_file, 'r') as citation:
+        refs = citation.read().split('@ARTICLE')[1:]
+```
 
 #### DOI for software releases
 

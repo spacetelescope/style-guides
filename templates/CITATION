@@ -1,0 +1,14 @@
+If you use <package> for work/research presented in a publication (whether
+directly, or as a dependency to another package), we recommend and encourage
+the following acknowledgment:
+
+  <add acknowledgement>
+
+We encourage you to also include citations to the papers in the main text
+wherever appropriate.
+
+Recommended BibTeX entries for the above citations are:
+
+@ARTICLE{
+  bibtex
+}
