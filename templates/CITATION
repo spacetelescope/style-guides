@@ -9,6 +9,13 @@ wherever appropriate.
 
 Recommended BibTeX entries for the above citations are:
 
-@ARTICLE{
-  bibtex
+@ARTICLE{<reference>,
+   author = {authors},
+    title = "title",
+  journal = "journal",
+ keywords = {keyword1, keyword2},
+     year = 2019,
+    month = jan,
+   volume = 1,
+      doi = {<thedoi>},
 }
