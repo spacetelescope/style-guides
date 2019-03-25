@@ -82,13 +82,14 @@ to a specific minor or patch release (i.e., don't use `numpy==1.12`). It is up
 to the package maintainer to regularly check for new releases of dependencies
 and to confirm they are working (this could be by automated weekly cron jobs,
 for example). If a dependency creates a release that breaks the maintainer's
-package, then the maintainer should create a point-release and pin an upper
-bound on the dependency and create an issue in their package to create a
-work-around for the dependency's new release. For example, if numpy 1.14 is
-released and results in a bug in our package then the point-release should be
-created to pin "numpy<=1.13" and an issue be created in the package to fix the
-error. It is not *expected* that this should happen as dependencies should use
-deprecation so there is a period of time over which changes can be made.
+package, then the maintainer should create an issue in the dependency's issue
+tracker reporting a problem.  If not promptly fixed, an exclusion of the broken
+dependency version (i.e. one that uses the exclusion mechanics of [PEP
+440](https://www.python.org/dev/peps/pep-0440)) should be added in the next
+release of the maintained package, or if impractical, a work-around. If fixed
+quickly enough, an exclusion may not be necessary, although a "known issues"
+note may be useful if such a section exists in the documentation or changelog.
+
 
 ## Python
 
