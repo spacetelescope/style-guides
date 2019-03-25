@@ -65,16 +65,41 @@ guidelines beyond it being the responsibility of the maintainer to keep an
 eye on how dependencies are evolving and set what version
 should be supported. However, two good rules of thumb are:
 
-* "The current version and the previous two" is often a reasonable choice of
-  dependency support. This is shorthand for "what the majority of the user
-  community uses", though, so if data on the user community's uptake is
-  available, that is preferred over this rule of thumb.
-* Only versions supported by the dependency's maintainers should be supported by
-  the dependent, unless the dependent software's maintainer is willing to take
-  complete responsibility for support of the old version of the dependency
+* "The current version and the previous two minor releases" is often a
+  reasonable choice of dependency support. This is shorthand for "what the
+  majority of the user community uses", though, so if data on the user
+  community's uptake is available, that is preferred over this rule of thumb.
+* Only versions supported by the dependency's maintainers should be supported
+  by the dependent, unless the dependent software's maintainer is willing to
+  take complete responsibility for support of the old version of the dependency.
 
 Building these rules into the test infrastructure for the package can be a very
 useful way to catch changes in dependencies that may affect your package. 
+
+One final guideline is that it is generally not the responsibility of
+individual package authors to to ensure a reproducible scientific environment.
+That is, it is up to *users* of our packages to document package dependency
+versions if they need to create a reproducible environment (e.g., to reproduce
+a scientific result) in the future. So, if they install a specific version of
+our package, it is up to them to record versions of all their dependencies as
+well. While as an institute we may wish to provide tools or documentation on
+how users might do this, any *particular* package need not aim to provide a
+specific reproducible environment.
+
+Minimal pinning of dependencies should happen and should likely only be `>=`
+type of dependencies (e.g., `numpy>=1.12`) as opposed to pinning a dependency
+to a specific minor or patch release (i.e., don't use `numpy==1.12`). It is up
+to the package maintainer to regularly check for new releases of dependencies
+and to confirm they are working (this could be by automated weekly cron jobs,
+for example). If a dependency creates a release that breaks the maintainer's
+package, then the maintainer should create an issue in the dependency's issue
+tracker reporting a problem.  If not promptly fixed, an exclusion of the broken
+dependency version (i.e. one that uses the exclusion mechanics of [PEP
+440](https://www.python.org/dev/peps/pep-0440)) should be added in the next
+release of the maintained package, or if impractical, a work-around. If fixed
+quickly enough, an exclusion may not be necessary, although a "known issues"
+note may be useful if such a section exists in the documentation or changelog.
+
 
 ## Python
 
