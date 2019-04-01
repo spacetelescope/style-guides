@@ -67,6 +67,14 @@ def _get_bibtex():
         refs = citation.read().split('@ARTICLE')[1:]
 ```
 
+As well, the `README` file should include a short paragraph that refers people
+to the `CITATION` file to see how the code should be referenced. For example:
+
+```
+Refer to the CITATION file to see how to reference this software in articles,
+papers and talks.
+```
+
 #### DOI for software releases
 
 Our open source software available to the public should include a DOI (Digitial
@@ -76,8 +84,8 @@ encourage!) the public to reference our software and even more, the specific
 version they used.  [Zenodo](https://zenodo.org) enables the automatic DOI
 creation when a release is done on GitHub.  Follow the discussion [on the
 GitHub guide](https://guides.github.com/activities/citable-code/) in order to
-use DOI's for your code releases.
-
+use DOI's for your code releases. The Zenodo badge should be included at
+the top of the `README` file for easy referencing.
 
 
 ### Software others build
