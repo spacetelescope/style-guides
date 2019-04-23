@@ -43,7 +43,39 @@ version. This should be enforced by automated tools where practical (e.g.,
 the Python package templates require a "release" tag to be set, and scripts
 automatically use that to append "dev" to the version).
 
-### DOI for software releases
+### Citing Software 
+
+#### How-To-Cite Instructions
+
+For users of our packages to be able to correctly cite our packages in their 
+publications a `CITATION` file should be included in the top level of the GitHub
+package that gives instructions on how the package should be cited in articles.
+An example set of text can be found in the 
+[CITATION](https://github.com/spacetelescope/style-guides/blob/master/templates/CITATION)
+file in this repository.
+
+The `__init__()` method in the top level directory of the package should contain
+code that creates attributes `__citation__` and `__bibtex__` which is text
+from the `CITATION` file. This can be accomplished by including:
+
+```python
+# Set the bibtex entry to the article referenced in CITATION.
+def _get_bibtex():
+    citation_file = os.path.join(os.path.dirname(__file__), 'CITATION')
+
+    with open(citation_file, 'r') as citation:
+        refs = citation.read().split('@ARTICLE')[1:]
+```
+
+As well, the `README` file should include a short paragraph that refers people
+to the `CITATION` file to see how the code should be referenced. For example:
+
+```
+Refer to the CITATION file to see how to reference this software in articles,
+papers and talks.
+```
+
+#### DOI for software releases
 
 Our open source software available to the public should include a DOI (Digitial
 Object Identifier) that has now become the standard for journal articles.
@@ -52,7 +84,9 @@ encourage!) the public to reference our software and even more, the specific
 version they used.  [Zenodo](https://zenodo.org) enables the automatic DOI
 creation when a release is done on GitHub.  Follow the discussion [on the
 GitHub guide](https://guides.github.com/activities/citable-code/) in order to
-use DOI's for your code releases.
+use DOI's for your code releases. The Zenodo badge should be included at
+the top of the `README` file for easy referencing.
+
 
 ### Software others build
 
