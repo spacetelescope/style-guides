@@ -62,7 +62,7 @@ team to see what, if any shared Box folder you might have.
    (`https://stsci.app.box.com/folder/######`) and upload your file.
 2. Click on the "Share" button for the file you just uploaded.
 3. In the dropdown, change the permissions to "People with the link" (this may be default depending on your settings)
-4. Click on the "gear" icon by "Shared Link"
+4. Click on the "gear" icon by "Shared Link" (or the gear might be "Link Settings" depending on your browser)
 5. Make sure "Allow Download" is checked
 6. You should see a "Direct Link" field at the bottom of the panel. This is the
    link to the file. 
