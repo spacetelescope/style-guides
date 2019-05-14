@@ -51,26 +51,26 @@ Prior to setting up your repository, it is strongly recommended to
 google potential names.  If it already exists consider choosing a
 different name (or contributing to that package if appropriate).  If
 the repository acronym can have offensive meanings in other contexts,
-try something different.  It is also useful to check Github and PyPi
+try something different.  It is also useful to check GitHub and PyPi
 for potential conflicts as well.
 
-### Github vs Gitlab
+### GitHub vs GitLab
 
 Following [STScI policy on source code
 control](https://innerspace.stsci.edu/display/isec/Source+Code+Control),
 the decision tree on where to host code is the following:
 
 * Is it ITAR protected?  Then host it on interal git ITAR server. 
-* Is it functional work?   Then it must be hosted on the STScI GitLab solution or the `spacetelescope` organization on Github
-* Will it have external collaborators?  Then it is recommended to host it on the `spacetelescope` organization on Github
+* Is it functional work?   Then it must be hosted on the STScI GitLab solution or the `spacetelescope` organization on GitHub
+* Will it have external collaborators?  Then it is recommended to host it on the `spacetelescope` organization on GitHub
 
-Code hosted on Github should follow the [STScI Github
+Code hosted on GitHub should follow the [STScI GitHub
 Policy](https://innerspace.stsci.edu/display/isec/GitHub).
 
 
 ### Creating an new repository  
 
-For Github:
+For GitHub:
 
 Open a Service Now ticket requesting a new repository.  The ticket
 should include the following information:
