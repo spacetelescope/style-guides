@@ -2,6 +2,10 @@
 
 Jupyter Notebooks are a convenient format for creating and sharing documents that combine code, data analyses, vizualizations, and prose. This guide describes best practices for creating readable (easy to understand), portable (likely to work on many computers) notebooks. Following this guide is a requirement for those authors contributing content to the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
 
+## Example notebook
+
+[This example notebook](templates/example_notebook.ipynb) implements this style guide with placeholder content. If you want to create a new notebook following this guide then you might want to start from this one.
+
 ## Design principles
 
 ### Make no assumptions
