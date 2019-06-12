@@ -159,12 +159,21 @@ Notebooks should use the standard STScI footer:
 
 ![Footer](images/footer.png)
 
+This can be implemented with the following code snippet placed in a cell at the bottom of the notebook.
+
+```
+<img style="float: right;" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" alt="Space Telescope Logo" width="200px"/>
+```
+
+The [example notebook](templates/example_notebook.ipynb) implements the footer in this way.
+
 ## Further reading
 
 ### Example notebooks following this style guide
 
 Here are some example notebooks that follow this style guide:
 
+- [An example notebook with placeholder content](templates/example_notebook.ipynb)
 - [Kepler Full Frame Images (FFI)](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
 - [Kepler Lightcurves](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb)
 - [Kepler Target Pixel Files (TPF)](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
