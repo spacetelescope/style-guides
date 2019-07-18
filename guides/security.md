@@ -4,7 +4,7 @@ In general, developers should be mindful of application security risks, and shou
 the [OWASP Top 10](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf) as best 
 possible.
 
-Users should also be aware of ITSD security policies.
+Users should also be aware of [ITSD security policies](https://innerspace.stsci.edu/display/isec).
  
 ## Tools for security practices
 
