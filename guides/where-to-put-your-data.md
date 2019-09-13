@@ -72,7 +72,7 @@ team to see what, if any shared Box folder you might have.
 DMD maintains a redirector API to retrieve files from Box using a more intuitive URL than the default. The link is constructed as follows:
 
 1. The base of the URL is https://data.science.stsci.edu/redirect
-2. Each nested folder within the `DMD_Managed_Data` folder is a path added to the URL. You can see the nested path at the top of the box web interface, underneath the Box search bar.
+2. Each nested folder within the `DMD_Managed_Data` folder is a path added to the URL. You can see the nested path at the top of the Box web interface, underneath the Box search bar.
 3. The final path is the name of the file you uploaded. 
 
 For example, https://data.science.stsci.edu/redirect/JWST/jwst-data_analysis_tools/README.txt
