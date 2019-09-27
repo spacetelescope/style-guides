@@ -6,7 +6,7 @@ This style guide provides suggestions for software versioning for STScI
 software, and the closely related topic of expectations for dependencies. While
 some of these rules are of general use, the implementation details usually
 depend on particular programming languages.  Hence this guide is subdivided into
-a short set of general guidelines, and more detailed suggestsions for specific
+a short set of general guidelines, and more detailed suggestions for specific
 languages.
 
 This document is meant as a guide to provide implementation suggestions and best
@@ -20,7 +20,7 @@ following this guide should ensure compliance with this policy.
 ### Software we build
 
 When reasonable, software should follow the principles of
-["Semantic Versioing"](https://semver.org/).  See the linked page for more
+["Semantic Versioning"](https://semver.org/).  See the linked page for more
 details, but the idea here is simple: version numbers should be
 MAJOR.MINOR.PATCH, where MAJOR is only updated for backwards-incompatible
 changes, MINOR for backwards-compatible changes with new features, or PATCH
@@ -77,9 +77,9 @@ papers and talks.
 
 #### DOI for software releases
 
-Our open source software available to the public should include a DOI (Digitial
+Our open source software available to the public should include a DOI (Digital
 Object Identifier) that has now become the standard for journal articles.
-Including a DOI for each released verison of software will enable (and
+Including a DOI for each released version of software will enable (and
 encourage!) the public to reference our software and even more, the specific
 version they used.  [Zenodo](https://zenodo.org) enables the automatic DOI
 creation when a release is done on GitHub.  Follow the discussion [on the
@@ -217,7 +217,7 @@ general the following guidelines should be considered:
 * If a particular feature of a new Python version is desired by a package, but
   it conflicts with the above rules, where possible an effort should be made to
   use compatibility functions or external packages (new Python features are
-  often backported to older versions via external packages soon after the new
+  often back-ported to older versions via external packages soon after the new
   Python version is released) to support the feature on older Python versions.
   Where this is difficult or impossible, a judgement call must be made as to
   whether the new feature improves maintainability or feature support enough to

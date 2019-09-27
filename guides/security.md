@@ -9,15 +9,15 @@ Users should also be aware of [ITSD security policies](https://innerspace.stsci.
 ## Tools for security practices
 
 The following tools are recommend for the use with different languages for static analysis
-* Python: [bandit][https://pypi.org/project/bandit/]
-* Java: [sonarqube][https://www.sonarqube.org/] 
+* Python: [bandit](https://pypi.org/project/bandit/)
+* Java: [sonarqube](https://www.sonarqube.org/)
 
 ## Secure information 
 
 The following items should never be committed in a source code or GitHub issues/pull requests:
 
 - Account credentials of any kind (e.g. database usernames and passwords)
-- Internal directory structures or filepaths
+- Internal directory structures or file paths
 - Machine names
 - Proprietary data
 
@@ -27,5 +27,5 @@ into the application at runtime.
 
 ## Additional resources and recommendations
 
-* [Web Application Security Tools][https://innerspace.stsci.edu/display/ASB/Web+Application+Security+Tools]
-* [ASB Security Assurance Process][https://innerspace.stsci.edu/display/ASB/ASB+Security+Assurance+Process+-+2019+March]
+* [Web Application Security Tools](https://innerspace.stsci.edu/display/ASB/Web+Application+Security+Tools)
+* [ASB Security Assurance Process](https://innerspace.stsci.edu/display/ASB/ASB+Security+Assurance+Process+-+2019+March)
