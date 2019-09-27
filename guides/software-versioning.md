@@ -217,7 +217,7 @@ general the following guidelines should be considered:
 * If a particular feature of a new Python version is desired by a package, but
   it conflicts with the above rules, where possible an effort should be made to
   use compatibility functions or external packages (new Python features are
-  often back-ported to older versions via external packages soon after the new
+  often backported to older versions via external packages soon after the new
   Python version is released) to support the feature on older Python versions.
   Where this is difficult or impossible, a judgement call must be made as to
   whether the new feature improves maintainability or feature support enough to
