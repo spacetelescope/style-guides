@@ -65,7 +65,7 @@ team to see what, if any shared Box folder you might have.
 4. Click on the "gear" icon by "Shared Link" (or the gear might be "Link Settings" depending on your browser)
 5. Make sure "Allow Download" is checked
 6. You should see a "Direct Link" field at the bottom of the panel. This is the
-   link to the file. An intuitive URL can be obtained using the instructions below.
+   link to the file. You can use this directly if desired, but it is rather opaque and thus can be off-putting or alarming to users.  Hence, it is recommended to use the more intuitive URL that can be obtained using the instructions below.
 
 
 #### Human-Friendly URLs to public Box files
