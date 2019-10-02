@@ -65,14 +65,17 @@ team to see what, if any shared Box folder you might have.
 4. Click on the "gear" icon by "Shared Link" (or the gear might be "Link Settings" depending on your browser)
 5. Make sure "Allow Download" is checked
 6. You should see a "Direct Link" field at the bottom of the panel. This is the
-   link to the file. 
-
-If you need the as-uploaded filename you’ll need to look in the
-"Content-Disposition" header of the response. In the future there may be a URL
-redirection service to make the links more human-readable, but at the time of
-this writing that service is not yet available.
+   link to the file. You can use this directly if desired, but it is rather opaque and thus can be off-putting or alarming to users.  Hence, it is recommended to use the more intuitive URL that can be obtained using the instructions below.
 
 
+#### Human-Friendly URLs to public Box files
+DMD maintains a redirector API to retrieve files from Box using a more intuitive URL than the default. The link is constructed as follows:
+
+1. The base of the URL is https://data.science.stsci.edu/redirect
+2. Each nested folder within the `DMD_Managed_Data` folder is a path added to the URL. You can see the nested path at the top of the Box web interface, underneath the Box search bar.
+3. The final path is the name of the file you uploaded. 
+
+For example, https://data.science.stsci.edu/redirect/JWST/jwst-data_analysis_tools/README.txt
 
 
 ## Python
