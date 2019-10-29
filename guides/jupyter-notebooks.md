@@ -4,7 +4,7 @@ Jupyter Notebooks are a convenient format for creating and sharing documents tha
 
 ## Example notebook
 
-[This example notebook](templates/example_notebook.ipynb) implements this style guide with placeholder content. If you want to create a new notebook following this guide then you might want to start from this one.
+[This example notebook](../templates/example_notebook.ipynb) implements this style guide with placeholder content. If you want to create a new notebook following this guide then you might want to start from this one.
 
 ## Design principles
 
