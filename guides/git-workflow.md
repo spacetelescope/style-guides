@@ -7,9 +7,9 @@
     2. [Forking Workflow](#forking-pros-cons)
 3. [Workflow Instructions](#workflow-instructions)
     1. [Opening a GitHub Issue](#github-issue)
-    2. [Branching Workflow](#brancing-workflow)
+    2. [Branching Workflow](#branching-workflow)
     3. [Forking Workflow](#forking-workflow)
-        1. [Keeping your fork update](#update-fork)
+        1. [Keeping your fork updated](#update-fork)
         2. [Collaborating on someone else's fork](#collaborate-on-fork)
 
 
