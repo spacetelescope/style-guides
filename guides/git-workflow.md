@@ -1,15 +1,35 @@
 # Workflow for contributing to a Git / GitHub repository in the `spacetelescope` organization
 
 ### Introduction
-The following describes two different workflows for contributing software to an open-source repository on GitHub under the `spacetelescope` organization (hereby referred to as the "`spacetelescope` repository"). One model involves creating branches off of the `spacetelescope` repository directly (hereby referred to as the "branching workflow"), while the other involves forking the `spacetelescope` repository, developing changes on personal branches of the fork (hereby referred to as the "forking workflow").  Ultimately, and regardless of which model is chosen, software changes get incorporated by opening pull requests.  Each of these workflows are further described below, with some comment on which workflow may be more appropriate for your software repository.
+The following describes two different workflows for contributing software to an open-source repository on GitHub under the `spacetelescope` organization (hereby referred to as the "`spacetelescope` repository"). One model involves creating branches off of the `spacetelescope` repository directly (hereby referred to as the "branching workflow"), while the other involves forking the `spacetelescope` repository and developing changes on personal branches of the fork (hereby referred to as the "forking workflow").  Ultimately, and regardless of which model is chosen, software changes get incorporated into the `spacetelescope` repository by opening pull requests.  Each of these workflows are further described below, with some comment on which workflow may be more appropriate for your software repository.
 
 ### Which workflow should I use?
 
-There are various pros and cons to each workflow, and it may not be clear-cut as to which workflow is best to choose for your project.  However, the power and benefit of the workflow comes in its consistent use across all team members during the development of a project.
+There are various pros and cons to each workflow, and it may not be obvious as to which workflow is best to choose for your project.  However, the power and benefit of the workflow comes in its consistent use across all team members and collaborators during the development of the software.
 
 #### Branching Workflow
 
+**Pros:**
+- Continuous integration tools such as Travis or Jenkins can be easily enabled for all branches of the repository, so new feature branches can automatically be tested when a pull request is opened or modified.
+
+**Cons:**
+- It is not possible for external collaborators to contribute unless they explicitly have write access to the `spacetelescope` repository.
+- It is easier to accidentally delete or overwrite the work of others who are also working on the same branch, or happen to have their own branch of the same name.  While it is possible to recover this work or to restrict the editing of specific branches to only select developers, it can sometimes be a painstaking process.
+- Repositories may accrue a fair amount of stale branches over time, which may become burdensome for developers, and may cause collaborators to infer that the project is not being maintained.
+
+
 #### Forking Workflow
+
+**Pros:**
+- Promotes "open development", wherein potential external collaborators who are interested in contributing may do so despite not having write access to the `spacetelescope` repository.
+- Provides a consistent experience and barrier-to-entry for everyone involved in the project, whether you are an internal or external collaborator.
+- Allows for an explicit namespace in pull requests and repository history that makes it more apparent who "owns" which branch.
+- Allows for contributors to experiment with various repository settings and/or continuous integrations tools without affecting how the `spacetelescope` repository operates.
+
+**Cons:**
+- Requires extra work to keep up-to-date with the parent, 'upstream' repository (i.e. one must periodically "update" their personal fork).
+- If forks are of a public repository, and more than one person wants to collaborate on someone's personal fork, then one must add each colleague to your fork.
+- If forks are of a private repository, then everyone watching the parent repository is automatically subscribed to all of the fork activity by default.  These notifications may become burdensome.
 
 
 ### Opening a GitHub Issue
