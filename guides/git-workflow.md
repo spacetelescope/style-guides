@@ -1,13 +1,25 @@
 # Workflow for contributing to a Git / GitHub repository in the `spacetelescope` organization
 
-### Introduction
-The following describes two different workflows for contributing software to an open-source repository on GitHub under the `spacetelescope` organization (hereby referred to as the "`spacetelescope` repository"). One model involves creating branches off of the `spacetelescope` repository directly (hereby referred to as the "branching workflow"), while the other involves forking the `spacetelescope` repository and developing changes on personal branches of the fork (hereby referred to as the "forking workflow").  Ultimately, and regardless of which model is chosen, software changes get incorporated into the `spacetelescope` repository by opening pull requests.  Each of these workflows are further described below, with some comment on which workflow may be more appropriate for your software repository.
+# Table of contents
+1. [Introduction](#introduction)
+2. [Which workflow should I use?](#which-workflow)
+    1. [Branching Workflow](#branching-pros-cons)
+    2. [Forking Workflow](#forking-pros-cons)
+3. [Workflow Instructions](#workflow-instructions)
+    1. [Opening a GitHub Issue](#github-issue)
+    2. [Branching Workflow](#brancing-workflow)
+    3. [Forking Workflow](#forking-workflow)
+        1. [Keeping your fork update](#update-fork)
+        2. [Collaborating on someone else's fork](#collaborate-on-fork)
 
-### Which workflow should I use?
 
+## Introduction <a name="introduction"></a>
+The following describes two different workflows for contributing software to an open-source repository on GitHub under the `spacetelescope` organization (hereby referred to as the "`spacetelescope` repository"). One model involves creating branches off of the `spacetelescope` repository directly (hereby referred to as the "branching workflow"), while the other involves forking the `spacetelescope` repository and developing changes on personal branches of the fork (hereby referred to as the "forking workflow").  Regardless of which model is chosen, software changes ultimately get incorporated into the `spacetelescope` repository through pull requests.  Below, we provide some pros/cons for each workflow.  We encourage developers to chose a workflow that is most appropriate for your repository.
+
+## Which workflow should I use? <a name="which-workflow"></a>
 There are various pros and cons to each workflow, and it may not be obvious as to which workflow is best to choose for your project.  However, the power and benefit of the workflow comes in its consistent use across all team members and collaborators during the development of the software.
 
-#### Branching Workflow
+### Branching Workflow <a name="branching-pros-cons"></a>
 
 **Pros:**
 - Continuous integration tools such as Travis or Jenkins can be easily enabled for all branches of the repository, so new feature branches can automatically be tested when a pull request is opened or modified.
@@ -18,7 +30,7 @@ There are various pros and cons to each workflow, and it may not be obvious as t
 - Repositories may accrue a fair amount of stale branches over time, which may become burdensome for developers, and may cause collaborators to infer that the project is not being maintained.
 
 
-#### Forking Workflow
+### Forking Workflow <a name="forking-pros-cons"></a>
 
 **Pros:**
 - Promotes "open development", wherein potential external collaborators who are interested in contributing may do so despite not having write access to the `spacetelescope` repository.
@@ -31,11 +43,14 @@ There are various pros and cons to each workflow, and it may not be obvious as t
 - If forks are of a public repository, and more than one person wants to collaborate on someone's personal fork, then one must add each colleague to your fork.
 - If forks are of a private repository, then everyone watching the parent repository is automatically subscribed to all of the fork activity by default.  These notifications may become burdensome.
 
+## Workflow Instructions <a name="workflow-instructions"></a>
 
-### Opening a GitHub Issue
+Below we provide step-by-step instructions on how to employ each workflow.
+
+### Opening a GitHub Issue <a name="github-issue"></a>
 Regardless of which workflow you chose, before contributing, you should determine if the eventual change is significant enough to warrant a GitHub issue; if you think that this change will be solving a significant problem or providing a significant enhancement to the project, then it would be advantageous to open an issue under the `spacetelescope` repository. This will allow both contributors and repository maintainers to keep track of the project and capture any needed context of the particular change. Any appropriate individuals should be assigned to the issue, and any appropriate label(s) should be tagged.
 
-### The Branching Workflow
+### The Branching Workflow <a name="branching-workflow"></a>
 
 1. Make a local copy of the `spacetelescope` repository by cloning the repository (e.g. `git clone https://github.com/username/repository_name.git`).  Note that, unless you explicitly delete your clone of the repository, this only has to be done once.
 
@@ -60,7 +75,7 @@ Regardless of which workflow you chose, before contributing, you should determin
 8. Once the pull request has been accepted and merged, you can delete your local branch with `git branch -d <branchname>`.
 
 
-### The Forking Workflow
+### The Forking Workflow <a name="forking-workflow"></a>
 
 1. Create a personal fork of the `spacetelescope` repository by visiting its location on GitHub and clicking the `Fork` button.  This will create a copy of the `spacetelescope` repository under your personal GitHub account (hereby referred to as "personal fork").  Note that this only has to be done once.
 
@@ -86,13 +101,13 @@ Regardless of which workflow you chose, before contributing, you should determin
 
 9. Once the pull request has been accepted and merged, you can delete your local branch with `git branch -d <branchname>`.
 
-#### Keeping your fork updated
+#### Keeping your fork updated <a name="update-fork"></a>
 If you wish to, you can keep a personal fork up-to-date with the `spacetelescope` repository by fetching and rebasing with the `upstream` remote:
 1. `git checkout master`
 2. `git fetch upstream master`
 3. `git rebase upstream/master`
 
-#### Collaborating on someone else's fork
+#### Collaborating on someone else's fork <a name="collaborate-on-fork"></a>
 Users can contribute to another user's personal fork by adding a `remote` that points to their fork and using the nominal forking workflow, e.g.:
 
 1. `git remote add <username> <remote URL>`
