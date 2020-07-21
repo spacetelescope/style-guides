@@ -71,9 +71,9 @@ This only applies to the `DMD_Managed_Data` folder, which is the only Box folder
 4. Click on the "gear" icon by "Shared Link" (or the gear might be "Link Settings" depending on your browser)
 5. Make sure "Allow Download" is checked
    
-The DMD AWS Redirector application will now ensure that all files under the directory tree are shared. This could take up to 15 minutes (or more for a large number of files.   
+The DMD AWS Redirector application will now ensure that all files under the directory tree are shared. This could take up to 15 minutes (or more for a large number of files). If your files are located somewhere outside of the `DMD_Managed_Data` Box directory tree, the above procedure can be used on an individual file to create a shared link. This can be accessed via the "Direct Link" field under the "Link Settings" area in item 4. 
 
-*Note: The Box API will not gracefully handle the sharing of more than a few hundred files in this way.*
+*Note: The DMD Redirector and Box API will not gracefully handle the sharing of more than a few hundred files via this shared folder method.*
 
 
 #### Human-Friendly URLs to public Box files
