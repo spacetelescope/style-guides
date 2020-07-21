@@ -58,14 +58,22 @@ being tied to your user account.  This is also helpful to prevent these files
 from counting against your account's size restrictions.  Talk to ITSD or your 
 team to see what, if any shared Box folder you might have.
 
+DMD maintains a redirector API to retrieve files from Box using a more intuitive URL than the default. Due to the nature of the Box API and DMD's AWS application that manages shared links, individual files can only be shared properly if a parent folder in the tree has a proper shared link. For instance, if your file in Box is at:
+`DMD_Managed_Data/A/B/C/file.txt`
+If any of folders `A`, `B`, or `C` are shared publicly, `file.txt` will also be shared publicly, *automatically*. This makes it easy to generate human-readable download links to a large number of files. 
+This only applies to the `DMD_Managed_Data` folder, which is the only Box folder managed by DMD's redirector application. 
+
+
 1. Go to the box web page for a box folder 
-   (`https://stsci.app.box.com/folder/######`) and upload your file.
-2. Click on the "Share" button for the file you just uploaded.
+   (`https://stsci.app.box.com/folder/######`) and upload your file(s).
+2. Go up one directory in Box, and click "Share" on the folder containing your file(s).
 3. In the dropdown, change the permissions to "People with the link" (this may be default depending on your settings)
 4. Click on the "gear" icon by "Shared Link" (or the gear might be "Link Settings" depending on your browser)
 5. Make sure "Allow Download" is checked
-6. You should see a "Direct Link" field at the bottom of the panel. This is the
-   link to the file. You can use this directly if desired, but it is rather opaque and thus can be off-putting or alarming to users.  Hence, it is recommended to use the more intuitive URL that can be obtained using the instructions below.
+   
+The DMD AWS Redirector application will now ensure that all files under the directory tree are shared. This could take up to 15 minutes (or more for a large number of files). If your files are located somewhere outside of the `DMD_Managed_Data` Box directory tree, the above procedure can be used on an individual file to create a shared link. This can be accessed via the "Direct Link" field under the "Link Settings" area in item 4. 
+
+*Note: The DMD Redirector and Box API will not gracefully handle the sharing of more than a few hundred files via this shared folder method.*
 
 
 #### Human-Friendly URLs to public Box files
@@ -75,7 +83,7 @@ DMD maintains a redirector API to retrieve files from Box using a more intuitive
 2. Each nested folder within the `DMD_Managed_Data` folder is a path added to the URL. You can see the nested path at the top of the Box web interface, underneath the Box search bar.
 3. The final path is the name of the file you uploaded. 
 
-For example, https://data.science.stsci.edu/redirect/JWST/jwst-data_analysis_tools/README.txt
+For example, these instructions are repeated at: https://data.science.stsci.edu/redirect/JWST/jwst-data_analysis_tools/README/README.txt
 
 
 ## Python
