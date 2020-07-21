@@ -83,7 +83,7 @@ DMD maintains a redirector API to retrieve files from Box using a more intuitive
 2. Each nested folder within the `DMD_Managed_Data` folder is a path added to the URL. You can see the nested path at the top of the Box web interface, underneath the Box search bar.
 3. The final path is the name of the file you uploaded. 
 
-For example, https://data.science.stsci.edu/redirect/JWST/jwst-data_analysis_tools/README/README.txt
+For example, these instructions are repeated at: https://data.science.stsci.edu/redirect/JWST/jwst-data_analysis_tools/README/README.txt
 
 
 ## Python
