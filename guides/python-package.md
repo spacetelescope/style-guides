@@ -3,7 +3,7 @@
 The following guide is to simplify the process of creating a python
 package.  We currently recommend using the [STScI cookie cutter
 template package](https://github.com/spacetelescope/stsci-package-template/tree/stsci-cookiecutter).  
-This is a modified verison of the [Astropy
+This is a modified version of the [Astropy
 Template Package](https://github.com/astropy/package-template) that
 includes a number of features that make it easier to set up, install,
 and maintain your package while also having the STScI branding,
@@ -14,7 +14,7 @@ documentation.
 
 The following steps will allow the creation of astropy affiliated
 packages compatible with the STScI requirements.  However, this might
-not always be approrpriate for each package and we currently do not
+not always be appropriate for each package and we currently do not
 recommend existing packages update to these standards.
 
 
@@ -60,7 +60,7 @@ Following [STScI policy on source code
 control](https://innerspace.stsci.edu/display/isec/Source+Code+Control),
 the decision tree on where to host code is the following:
 
-* Is it ITAR protected?  Then host it on interal git ITAR server. 
+* Is it ITAR protected?  Then host it on internal git ITAR server. 
 * Is it functional work?   Then it must be hosted on the STScI GitLab solution or the `spacetelescope` organization on GitHub
 * Will it have external collaborators?  Then it is recommended to host it on the `spacetelescope` organization on GitHub
 
@@ -92,7 +92,7 @@ their own new repository.
 To create a new package, we recommend the following steps.  These make
 use the
 [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/index.html)
-package to quickly create a basic package with the infastructure
+package to quickly create a basic package with the infrastructure
 needed for coding, testing, and documentation.
 
 1.  Install the cookie cutter package
@@ -119,7 +119,7 @@ Register your package on https://travis-ci.org and modify the
 .travis.yml file to your needs. The default .travis.yml file contains
 a large number of builds, against various versions of Python, Astropy,
 and numpy, and you should choose the ones relevant to your
-project. Full documentatiion of the .travis.yml file can be found on
+project. Full documentation of the .travis.yml file can be found on
 the Travis CI website.
 
 
@@ -137,7 +137,7 @@ should work:
 
 
 Once these steps have been completed, the package should be ready for
-futher development with testing and documentation in place.
+further development with testing and documentation in place.
 
 
 

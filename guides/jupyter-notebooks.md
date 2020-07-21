@@ -1,10 +1,10 @@
 # Jupyter Notebooks
 
-Jupyter Notebooks are a convenient format for creating and sharing documents that combine code, data analyses, vizualizations, and prose. This guide describes best practices for creating readable (easy to understand), portable (likely to work on many computers) notebooks. Following this guide is a requirement for those authors contributing content to the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
+Jupyter Notebooks are a convenient format for creating and sharing documents that combine code, data analyses, visualizations, and prose. This guide describes best practices for creating readable (easy to understand), portable (likely to work on many computers) notebooks. Following this guide is a requirement for those authors contributing content to the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
 
 ## Example notebook
 
-[This example notebook](templates/example_notebook.ipynb) implements this style guide with placeholder content. If you want to create a new notebook following this guide then you might want to start from this one.
+[This example notebook](../templates/example_notebook.ipynb) implements this style guide with placeholder content. If you want to create a new notebook following this guide then you might want to start from this one.
 
 ## Design principles
 
@@ -27,7 +27,7 @@ Notebooks should be portable, that is, they should be designed to work on multip
 
 ![A notebook cell](images/notebook-cell.png)
 
-Creating a new notebook can take time, and in the development process, some content cells (code and prose) may become out of date/superfluous. Before commiting your work to a source repository, make sure that:
+Creating a new notebook can take time, and in the development process, some content cells (code and prose) may become out of date/superfluous. Before committing your work to a source repository, make sure that:
 
 - Cells capture logical units of work. i.e. don't put all of your code in a single giant cell of logic. Try and break it out into smaller units, inter-dispersed with text explaining what you are doing.
 - All of the cells are required and *in order*. i.e., you can go from the start of your notebook to the end, executing each cell. Cells should only fail if they are *meant* to, because you're illustrating the meaning of an error message or similar.
@@ -35,7 +35,7 @@ Creating a new notebook can take time, and in the development process, some cont
 
 ### Write readable prose using Markdown
 
-Use cells with [Markdown](https://www.markdownguide.org/basic-syntax/#paragraphs-1) formatting to describe anything that isn't actually code.  Also use them either before or after code cells to describe what's happening.  When mathmatics expressions are needed, use the [Jupyter additions to markdown](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#markdown-cells), which are basically carefully-controlled LaTeX.
+Use cells with [Markdown](https://www.markdownguide.org/basic-syntax/#paragraphs-1) formatting to describe anything that isn't actually code.  Also use them either before or after code cells to describe what's happening.  When mathematical expressions are needed, use the [Jupyter additions to markdown](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#markdown-cells), which are basically carefully-controlled LaTeX.
 
 Only use code comments when it's a natural inline comment directly connected to that line of code.  Do **not** use code cells with comments to replace well-written prose!
 
@@ -135,7 +135,7 @@ More detailed info about Section 1
 A complete thought that's as important as section 1 but doesn't need sub-sections.
 ```
 
-Be sure to use section headings (i.e., the number of `#`'s) in a way that gives heirarchical meaning to your document.  The header levels are used to do things like intelligently make links, so you don't want to confuse them by using heder levels that don't match the logical flow of the document.
+Be sure to use section headings (i.e., the number of `#`'s) in a way that gives hierarchical meaning to your document.  The header levels are used to do things like intelligently make links, so you don't want to confuse them by using heder levels that don't match the logical flow of the document.
 
 ### Exercises
 
@@ -143,7 +143,7 @@ Most notebooks are trying to convey *some* information to their reader.  It's of
 
 ### Additional resources
 
-While this isn't always necessary, sometimes you want to Provide some more resources for the reader who wants to learn something beyond what's in the notebook.  Sometimes these don't exist, but if they do, it's good to put them at the end to give the reader somewhere else to go. Usually a list of links using markdown bullet-plus-link format is approopriate:
+While this isn't always necessary, sometimes you want to Provide some more resources for the reader who wants to learn something beyond what's in the notebook.  Sometimes these don't exist, but if they do, it's good to put them at the end to give the reader somewhere else to go. Usually a list of links using markdown bullet-plus-link format is appropriate:
 ```
 * [A neat resource to learn more](http://learning.org/how-i-learned-science-is-cool.html)
 * [A place to find more relevant code](https://github.com/spacetelescope/jwst)

@@ -17,7 +17,7 @@ The style guide is based on the [Python Style Guideline][1] (PEP8),
 the [Astropy Coding Guidelines][2], [JWST Quick Look Style Guide][5],
 and the [LSST Style Guide][3]. If in doubt, err on the side of making
 the code more readable.  If really in doubt, we suggest following the
-Zen of Python which you can read by opeinging up Python and typing ``
+Zen of Python which you can read by opening up Python and typing ``
 import this``.
 
 ## Version
@@ -88,7 +88,7 @@ building, maintaining, and sharing the documentation.  Packages should
 have automatically build documentation including narrative
 documentation and Application Programming Interfaces (API).  By
 following this recommendations, these documents can be built
-automatically and hosted automatically on servcies like
+automatically and hosted automatically on services like
 [ReadTheDocs](https://readthedocs.org/) or internal STScI services.
 
 
@@ -110,7 +110,7 @@ documentation.
 
 ### Narrative Documentation
 
-Package documnentation should be built using
+Package documentation should be built using
 [Sphinx](http://www.sphinx-doc.org/en/master/index.html) and
 recommended to be in [Restructured
 Text](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#explicit-markup).
@@ -118,7 +118,7 @@ Such documentation should be considered a first-class item along side the code.
 That is, it should be executed along with tests to ensure the documentation
 builds correctly and any code examples run properly.
 
-Notebooks can be used as part of the documentation.  They shoud be considered
+Notebooks can be used as part of the documentation.  They should be considered
 parts of the documentation, however, and in general should be
 included in the automatically built documentation using e.g.,
 [`nbconvert`](https://nbconvert.readthedocs.io/).

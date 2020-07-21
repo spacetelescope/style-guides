@@ -16,10 +16,10 @@ it is necessary to maintain an older versions of the package or not.
    and “hot-fix” releases are made from the release branches.
 
 
-## Good Practicies
+## Good Practices
 
 There are certain activities which are common for all workflows and are simply
-good practicies when releasing a package.
+good practices when releasing a package.
 
 1. Version the package using semantic versioning.
    Details can be found in the

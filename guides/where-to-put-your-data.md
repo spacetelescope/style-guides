@@ -54,7 +54,7 @@ primary recommendations.
 
 Note that if you are making a static link publicly visible, it is best practice
 to use a shared folder that is managed by a shared data account rather than
-being tied to your user account.  This is also helpful to prevent thiese files
+being tied to your user account.  This is also helpful to prevent these files
 from counting against your account's size restrictions.  Talk to ITSD or your 
 team to see what, if any shared Box folder you might have.
 
@@ -96,7 +96,7 @@ is recommended to decide how to make data accessible in a Python project:
    This should be used even if an intermediate data product is actually needed -
    e.g., download single-exposures from MAST and combine them using drizzle
    instead of providing a custom drizzled image and serving that (as long as it
-   isn't computationally infesible).  This is more reproducible and
+   isn't computationally infeasible).  This is more reproducible and
    understandable to the end-user.
 
 2. If the dataset is not on MAST but is on some other standardized public
@@ -110,7 +110,7 @@ is recommended to decide how to make data accessible in a Python project:
       standard packages - do *not* roll your own reader unless no other way
       exists.
 
-3. Otherwise for public data, choose follow the guielines above in "Storage
+3. Otherwise for public data, choose follow the guidelines above in "Storage
    location/platform for non-archived datasets" and download from public URLs
    using:
 
