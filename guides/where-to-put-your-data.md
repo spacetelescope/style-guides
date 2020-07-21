@@ -70,9 +70,9 @@ This only applies to the `DMD_Managed_Data` folder, which is the only Box folder
 3. In the dropdown, change the permissions to "People with the link" (this may be default depending on your settings)
 4. Click on the "gear" icon by "Shared Link" (or the gear might be "Link Settings" depending on your browser)
 5. Make sure "Allow Download" is checked
-6. You should see a "Direct Link" field at the bottom of the panel. This is the
-   link to the file. You can use this directly if desired, but it is rather opaque and thus can be off-putting or alarming to users.  Hence, it is recommended to use the more intuitive URL that can be obtained using the instructions below.
    
+The DMD AWS Redirector application will now ensure that all files under the directory tree are shared. This could take up to 15 minutes (or more for a large number of files.   
+
 *Note: The Box API will not gracefully handle the sharing of more than a few hundred files in this way.*
 
 
