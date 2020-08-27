@@ -296,7 +296,7 @@ extensions:
 
 ```
 
-Where possible (if the code supports it): use code examples that use Jupyter to
+Where possible (if the code supports it), use code examples that use Jupyter to
 *show* what's in the data. For example, if you are showing an object that can be
 read as an Astropy table, display the table:
 
@@ -349,8 +349,9 @@ attempt.
 While this section isn't always necessary, sometimes you want to provide more
 resources for the reader who wants to learn something beyond what's in the
 notebook. Sometimes these resources don't exist, but if they do, it's good to
-put them at the end to give the reader somewhere else to go. Usually a list of
-links using Markdown bulleted list plus link format is appropriate:
+put them at the end of your notebook to give the reader somewhere else to go.
+Usually a list of links using Markdown bullet list plus link format is
+appropriate:
 
 ```
 * [A neat resource to learn
@@ -363,7 +364,7 @@ links using Markdown bulleted list plus link format is appropriate:
 
 Let the world know who the author of this great notebook is! If possible and
 appropriate, include a contact email address for users who might need support
-(for example `archive@stsci.edu`). You can also optionally include keywords or
+(for example, `archive@stsci.edu`). You can also optionally include keywords or
 your funding source in this section.
 
 ### Citations
@@ -422,7 +423,7 @@ Here are some example notebooks that follow this style guide:
 ### Other Resources
 
 For a related view of notebook styles in the astronomy context, see the [Astropy
-Contributing Guide](http://learn.astropy.org/contributing.html)
+Contributing Guide](http://learn.astropy.org/contributing.html).
 
 ### Contributing to the STScI notebooks repository
 
