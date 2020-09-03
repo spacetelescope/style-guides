@@ -1,39 +1,36 @@
-# Jupyter Notebooks
+# Jupyter Notebooks and Tutorials
 
-.. do we want to specify that this is a guide for creating notebooks and
-   tutorials, or would no one ever be contributing a tutorial that wasn't
-   created in a Jupyter notebook? As in, are the terms "notebook" and "tutorial"
-   interchangeable?
-
-Jupyter Notebooks are a convenient format for creating and sharing documents
-that combine code, data analyses, visualizations, and prose. This guide
-describes best practices for creating readable (easy to understand), portable
-(likely to work on many computers) notebooks. Following this guide is a
-requirement for those authors contributing content to the [STScI notebooks
-repository](https://github.com/spacetelescope/notebooks).
+This guide describes best practices for creating readable (easy to understand),
+portable (likely to work on many computers) tutorials. Jupyter Notebooks are a
+convenient format for creating and sharing documents that combine code, data
+analyses, visualizations, and prose, which are the key components of a tutorial.
+Following this guide is a requirement for those authors contributing content to
+the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
 
 ## Example notebook
 
-This [example notebook](../templates/example_notebook.ipynb) implements this
-style guide with placeholder content. If you want to create a new notebook
-following this guide then you might want to start from this one.
+This [example notebook](../templates/example_notebook.ipynb) provides a tutorial
+template with placeholder content based on this style guide. If you want to
+create a new tutorial following this guide, then you might want to start from
+this example notebook.
 
 ## Design principles
 
 ### Make no assumptions
 
-As the notebook author, don't assume people know the same things as you. This
-means any terms or common acronyms should be defined when they are first used.
-It you're using some kind of astronomical parameter, make sure you define it
-(for example, in its mathematical form) or link to any definitions (literature,
-Wikipedia, etc.). If you think this is making your notebook too detailed, use
-clearly-named sections with appropriate introductions, or split your notebook
-into two separate ones that reference each other.
+As the tutorial author, don't assume people know the same things as you. This
+means that any terms or common acronyms should be defined when they are first
+used. It you're using some kind of astronomical parameter, make sure you define
+it (for example, in its mathematical form) or link to any definitions
+(literature, Wikipedia, etc.). If you think this information is making your
+tutorial too detailed, use clearly named sections with appropriate
+introductions, or split your tutorial into two separate tutorials that reference
+each other.
 
-Above all, know your audience: if you are writing a notebook only for
-astronomers in a specific field, you might be more terse on background. But if
-so, *say so* at the beginning of your notebook, and know that most readers will
-not get anything from it.
+Above all, know your audience: if you are writing a tutorial for astronomers in
+a specific field, you might be more terse on background. But if so, *say so* at
+the beginning of your tutorial, and know that most readers will not get anything
+from it.
 
 Always avoid assumptive or belittling words such as “obviously,” “easily,”
 “simply,” “just,” or “straightforward.” Avoid words or phrases that create worry
@@ -42,9 +39,9 @@ confidence in the skills being learned.
 
 ### Design for portability
 
-Notebooks should be portable, that is, they should be designed to work on
-multiple computers. There are a few basic steps you can take as a notebook
-author to increase the "portability" of a notebook:
+Tutorials should be portable, that is, they should be designed to work on
+multiple computers. There are a few basic steps you can take as a tutorial
+author to increase the "portability" of a tutorial notebook:
 
 - Use APIs, not file systems, to access data. Where possible, use libraries such
   as [`astroquery.mast`](https://astroquery.readthedocs.io/en/latest/) to
@@ -62,7 +59,7 @@ author to increase the "portability" of a notebook:
   have good internet access or a fast computer when they try to run your
   notebook. Instead, try to use compact examples that work on smaller portions
   of a dataset. While this is not always possible given the goals of a
-  particular notebook, it is best to strive for it. At the very least, be sure
+  particular tutorial, it is best to strive for it. At the very least, be sure
   to warn the user clearly if a notebook will have long runtime or large
   downloads.
 - Avoid using any unnecessary non-markdown constructs. While it's tempting to
@@ -75,7 +72,7 @@ author to increase the "portability" of a notebook:
 
 ![A notebook cell](images/notebook-cell.png)
 
-Creating a new notebook can take time, and in the development process, some
+Creating a new tutorial can take time, and in the development process, some
 content cells (code and prose) may become out of date or superfluous. Before
 committing your work to a source repository, make sure that:
 
@@ -132,7 +129,7 @@ guide](where-to-put-your-data.md) for details on how to do this). As shown
 previously, if your notebook needs ancillary files, you should include them at
 the same level as your notebook.
 
-Similarly, if your notebook involves *writing* files, you should write the
+Similarly, if your tutorial involves *writing* files, you should write the
 notebook so that they are written in the same location. As an example, if you
 are making a scatter plot using matplotlib and want to demonstrate to the user
 how to save it, you can do this in the notebook:
@@ -145,19 +142,17 @@ plt.savefig('result-plot.png')
 
 And the image will end up in the same place as any ancillary files.
 
-## Recommended notebook and tutorial structure
+## Recommended tutorial structure
 
-It's recommended that Jupyter notebooks and STScI tutorials use the following
-suggested structure:
+It's recommended that tutorials use the following suggested structure:
 
 - [Title](#title)
-- [Table of Contents](#table-of-contents)
 - [Learning Goals](#learning-goals)
 - [Imports](#imports)
 - [Introduction](#introduction)
 - [Loading Data](#loading-data)
 - [File Information](#file-information)
-- [Sections](#sections) (xN)
+- [Main Content](#main-content) (xN)
 - [Exercises](#exercises) (encouraged)
 - [Additional Resources](#additional-resources) (optional)
 - [About this Notebook](#about-this-notebook)
@@ -176,41 +171,27 @@ syntax](https://www.markdownguide.org/basic-syntax/#headings):
 
 ```
 
-### Table of Contents
-
-Provide a table of contents to help readers quickly navigate the sections of
-your notebook. Use the following [Markdown
-syntax](https://www.markdownguide.org/basic-syntax/):
-
-```
-## Table of Contents
-- [My First Section](#my-first-section)
-- [My Second Section](#my-second-section)
-- [My Third Section](#my-third-section)
-
-```
-
 ### Learning Goals
 
-Every notebook should contain three to five explicit learning goals. A learning
+Every tutorial should contain three to five explicit learning goals. A learning
 goal should describe what a reader should know or be able to do by the end of
-the notebook that they didn't know or couldn't do before.
+the tutorial that they didn't know or couldn't do before.
 
 Learning goals can be broken down into:
 
-- Skills: what the reader should be able to do by the end of the notebook.
-- Knowledge: what the reader should understand by the end of the notebook.
+- Skills: what the reader should be able to do by the end of the tutorial.
+- Knowledge: what the reader should understand by the end of the tutorial.
 - Attitudes: what the reader's opinions about the subject matter will be by the
-  end of the notebook.
+  end of the tutorial.
 
-To create your notebook learning goals, write sentences that identify what
-skill, knowledge, or attitude the reader will gain from your notebook, and use
+To create your tutorial learning goals, write sentences that identify what
+skill, knowledge, or attitude the reader will gain from your tutorial, and use
 strong action verbs (understand, explain, demonstrate, determine, create,
 access, calculate, analyze).
 
 Template learning goal sentence:
 
-By the end of this notebook, you will be able to (skill) in order to
+By the end of this tutorial, you will be able to (skill) in order to
 (knowledge).
 
 #### Examples
@@ -239,39 +220,36 @@ By the end of this tutorial, you will be able to:
 
 ### Imports
 
-Import your dependencies near the top of the notebook and explain why you're
+.. suggestion to move Imports to after Introduction
+
+Import your dependencies near the top of the tutorial and explain why you're
 including each one. For example:
 
 ![Imports](images/imports.png)
 
 ### Introduction
 
-Write a short introduction explaining the purpose of the notebook. If there are
-background materials or resources that may be useful to the reader to provide
-additional context, you may link to it here.
-
-#### Defining Terms
-
-As a subsection of your introduction section, define any terms or common
-acronyms that your audience may not know. If you're using some kind of
-domain-specific astronomical symbol or unusual mathematical concept, make sure
-you define it (for example, in its mathematical form) and link to any
+Write a short introduction explaining the purpose of the tutorial. Define any
+terms or common acronyms that your audience may not know. If you're using some
+kind of domain-specific astronomical symbol or unusual mathematical concept,
+make sure you define it (for example, in its mathematical form) and link to any
 definitions (from literature, Wikipedia, etc.).
 
-#### Companion Content
-
-As a subsection of your introduction section, link to any helpful companion
-content. For example, if your notebook is a continuation from another notebook,
-or there are other notebooks that would be useful for the reader to read before
-or after your notebook, mention that here.
+If there are background materials or resources that may be useful to the reader
+to provide additional context, you may link to it here. If your tutorial is a
+continuation from another tutorial, or there are other tutorials that would be
+useful for the reader to read before or after your tutorial, mention that here
+as well.
 
 ### Loading Data
 
-.. should Loading Data and File Information go right after Imports? It seems
-   funny to have the Introduction separated from the main content by these two
-   sections, and might look cleaner to have all of the importing/downloading
-   info together before the learning material starts, but is there a specific
-   reason for this order?
+.. suggestion to move Loading Data and File Information into the Main Content
+   section, with an explanation that these can be their own sections within the
+   Main Content, but avoid generic/vague headings like “Loading Data” and
+   instead use descriptive headings pertinent to the content of the tutorial and
+   the actual data being downloaded or files being used. So instead of vague
+   headings like "Downloading data," instead use something like “Downloading
+   Multiple `KeplerLightCurve` Objects at Once.”
 
 If the user needs to download data to run the tutorial properly, where possible,
 use [Astroquery](https://astroquery.readthedocs.io/en/latest/) (or similar) to
@@ -296,17 +274,17 @@ extensions:
 
 ```
 
-Where possible (if the code supports it), use code examples that use Jupyter to
-*show* what's in the data. For example, if you are showing an object that can be
-read as an Astropy table, display the table:
+Where possible (if the code supports it), use code examples that visually
+display the data in the tutorial. For example, if you are showing an object that
+can be read as an Astropy table, display the table:
 
 ![show-data-example](images/notebook_table_data_example.png)
 
-### Sections
+### Main Content
 
-The main content of your notebook should be subdivided into numbered sections
-with useful names that make sense based on the content. Break sections up with
-standard [Markdown syntax
+The main content of your tutorial should be subdivided into numbered sections
+with useful, descriptive headings that make sense based on the content. Break
+sections up with standard [Markdown syntax
 headings](https://www.markdownguide.org/basic-syntax/#headings):
 
 ```
@@ -326,30 +304,46 @@ subsections.
 ```
 
 Be sure to use the Markdown headings (that is, the number of `#`'s) in a way
-that gives hierarchical meaning to your document. The header levels are used to
-do things like intelligently make links, so you don't want to confuse things by
-using header levels that don't match the logical flow of the document.
+that gives hierarchical meaning to your tutorial. The header levels are used to
+do things like intelligently make links and the Table of Contents, so you don't
+want to confuse things by using header levels that don't match the logical flow
+of the tutorial.
+
+All terms and relevant additional resources should be defined and linked to as
+new topics are introduced and your tutorial progresses, so that terms and
+resources appear within the context of your main content. Short exercises can be
+woven into your Main Content sections as well.
 
 ### Exercises
 
-Most notebooks convey information to their reader by posing questions and then
+Exercises are optional, but encouraged. Exercises can be woven into the Main
+Content of your tutorial, or appear in their own section toward the end of the
+tutorial. Final exercises can be more challenging, similar to homework problems.
+They can be minimal or take as long as 30 minutes to an hour to complete.
+
+Most tutorials convey information to their reader by posing questions and then
 providing answers. But as so many of us learn by doing, it's encouraged for you
-to provide exercises in your notebook that pose questions but do not include
+to provide exercises in your tutorial that pose questions but do not include
 immediate answers so that your reader can practice their new skills to cement
 the knowledge in their minds.
 
 If you do have one or more exercises, be sure to leave a blank code cell
-underneath to show the reader that they're meant to try out their new skill
+underneath each to show the reader that they're meant to try out their new skill
 right there. You may also want to include a "solutions" notebook next to your
 main notebook for the reader to check their work after they have finished their
 attempt.
 
 ### Additional Resources
 
+.. suggestion to remove the Additional Resources section and instead ask
+   tutorial authors to include additional resources in line with the context of
+   their main content, instead of in a separate list at the end that has no
+   context.
+
 While this section isn't always necessary, sometimes you want to provide more
-resources for the reader who wants to learn something beyond what's in the
-notebook. Sometimes these resources don't exist, but if they do, it's good to
-put them at the end of your notebook to give the reader somewhere else to go.
+resources for the reader who wants to learn something beyond what's in your
+tutorial. Sometimes these resources don't exist, but if they do, it's good to
+put them at the end of your tutorial to give the reader somewhere else to go.
 Usually a list of links using Markdown bullet list plus link format is
 appropriate:
 
@@ -362,14 +356,12 @@ appropriate:
 
 ### About this Notebook
 
-Let the world know who the author of this great notebook is! If possible and
+Let the world know who the author of this great tutorial is! If possible and
 appropriate, include a contact email address for users who might need support
-(for example, `archive@stsci.edu`). You can also optionally include keywords or
-your funding source in this section.
+(for example, `archive@stsci.edu`). You can also optionally include keywords,
+your funding source, or a last update date in this section.
 
 ### Citations
-
-.. what else needs to go in this section?
 
 Provide your reader with guidelines on how to cite open source software and
 other resources in their own published work.
@@ -411,9 +403,9 @@ Dictionary](https://www.merriam-webster.com/). STScI writing guidelines are in
 agreement with the [Astropy Narrative Style
 Guide](https://docs.astropy.org/en/stable/development/style-guide.html).
 
-### Example notebooks following this style guide
+### Example tutorials following this style guide
 
-Here are some example notebooks that follow this style guide:
+Here are some example tutorials that follow this style guide:
 
 - [An example notebook with placeholder content](../templates/example_notebook.ipynb)
 - [Kepler Full Frame Images (FFI)](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
@@ -422,7 +414,7 @@ Here are some example notebooks that follow this style guide:
 
 ### Other Resources
 
-For a related view of notebook styles in the astronomy context, see the [Astropy
+For a related view of tutorial styles in the astronomy context, see the [Astropy
 Contributing Guide](http://learn.astropy.org/contributing.html).
 
 ### Contributing to the STScI notebooks repository
