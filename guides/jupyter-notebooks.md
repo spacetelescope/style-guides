@@ -1,11 +1,14 @@
 # Jupyter Notebooks and Tutorials
 
-This guide describes best practices for creating readable (easy to understand),
-portable (likely to work on many computers) tutorials. Jupyter Notebooks are a
-convenient format for creating and sharing documents that combine code, data
-analyses, visualizations, and prose, which are the key components of a tutorial.
-Following this guide is a requirement for those authors contributing content to
-the [STScI notebooks repository](https://github.com/spacetelescope/notebooks).
+Jupyter Notebooks are a convenient format for creating and sharing documents
+that combine code, data analyses, visualizations, and prose, which are the key
+components of a tutorial. This guide describes best practices for creating
+readable (easy to understand) and portable (likely to work on many computers)
+notebooks. Following this guide is a requirement for those authors contributing
+content to the [STScI notebooks
+repository](https://github.com/spacetelescope/notebooks). This style guide, when
+not documenting notebook-specific syntax, also applies to other formats like
+non-notebook tutorials or example descriptions.
 
 ## Example notebook
 
@@ -148,11 +151,11 @@ It's recommended that tutorials use the following suggested structure:
 
 - [Title](#title)
 - [Learning Goals](#learning-goals)
-- [Imports](#imports)
 - [Introduction](#introduction)
-- [Loading Data](#loading-data)
-- [File Information](#file-information)
+- [Imports](#imports)
 - [Main Content](#main-content) (xN)
+  - [Loading Data](#loading-data)
+  - [File Information](#file-information)
 - [Exercises](#exercises) (encouraged)
 - [Additional Resources](#additional-resources) (optional)
 - [About this Notebook](#about-this-notebook)
@@ -218,15 +221,6 @@ By the end of this tutorial, you will be able to:
 
 ```
 
-### Imports
-
-.. suggestion to move Imports to after Introduction
-
-Import your dependencies near the top of the tutorial and explain why you're
-including each one. For example:
-
-![Imports](images/imports.png)
-
 ### Introduction
 
 Write a short introduction explaining the purpose of the tutorial. Define any
@@ -241,44 +235,12 @@ continuation from another tutorial, or there are other tutorials that would be
 useful for the reader to read before or after your tutorial, mention that here
 as well.
 
-### Loading Data
+### Imports
 
-.. suggestion to move Loading Data and File Information into the Main Content
-   section, with an explanation that these can be their own sections within the
-   Main Content, but avoid generic/vague headings like “Loading Data” and
-   instead use descriptive headings pertinent to the content of the tutorial and
-   the actual data being downloaded or files being used. So instead of vague
-   headings like "Downloading data," instead use something like “Downloading
-   Multiple `KeplerLightCurve` Objects at Once.”
+Import your dependencies after the introduction and explain why you're including
+each one. For example:
 
-If the user needs to download data to run the tutorial properly, where possible,
-use [Astroquery](https://astroquery.readthedocs.io/en/latest/) (or similar) to
-retrieve files. If this is not possible, see the [data
-guide](where-to-put-your-data.md) for other options.
-
-### File Information
-
-Explain pertinent details about the file you've just downloaded. For example, if
-working with Kepler light curves, explain what's in the different file
-extensions:
-
-```
-- No. 0 (Primary): This HDU contains metadata related to the entire file.
-- No. 1 (Light curve): This HDU contains a binary table that holds data like
-  flux measurements and times. We will extract information from here when we
-  define the parameters for the light curve plot.
-- No. 2 (Aperture): This HDU contains the image extension with data collected
-  from the aperture. We will also use this to display a bitmask plot that
-  visually represents the optimal aperture used to create the SAP_FLUX column in
-  HDU1.
-
-```
-
-Where possible (if the code supports it), use code examples that visually
-display the data in the tutorial. For example, if you are showing an object that
-can be read as an Astropy table, display the table:
-
-![show-data-example](images/notebook_table_data_example.png)
+![Imports](images/imports.png)
 
 ### Main Content
 
@@ -304,20 +266,63 @@ subsections.
 ```
 
 Be sure to use the Markdown headings (that is, the number of `#`'s) in a way
-that gives hierarchical meaning to your tutorial. The header levels are used to
+that gives hierarchical meaning to your tutorial. The heading levels are used to
 do things like intelligently make links and the Table of Contents, so you don't
-want to confuse things by using header levels that don't match the logical flow
+want to confuse things by using heading levels that don't match the logical flow
 of the tutorial.
+
+Loading data and file information should appear within your main content, at the
+same time the data is going to be used, if possible. These elements of your
+tutorial can be their own sections within the main content, but avoid generic or
+vague headings like “Loading Data” and instead use descriptive headings
+pertinent to the content of the tutorial and the actual data being downloaded or
+files being used. For example, instead of a vague heading like "Downloading
+Data," use something like “Downloading Multiple `KeplerLightCurve` Objects at
+Once.” For additional details on loading data and file information, read the
+following sections.
+
+#### Loading Data
+
+If the user needs to download data to run the tutorial properly, where possible,
+use [Astroquery](https://astroquery.readthedocs.io/en/latest/) (or similar) to
+retrieve files. If this is not possible, see the [data
+guide](where-to-put-your-data.md) for other options.
+
+#### File Information
+
+Explain pertinent details about the file you've just downloaded. For example, if
+working with Kepler light curves, explain what's in the different file
+extensions:
+
+```
+- No. 0 (Primary): This HDU contains metadata related to the entire file.
+- No. 1 (Light curve): This HDU contains a binary table that holds data like
+  flux measurements and times. We will extract information from here when we
+  define the parameters for the light curve plot.
+- No. 2 (Aperture): This HDU contains the image extension with data collected
+  from the aperture. We will also use this to display a bitmask plot that
+  visually represents the optimal aperture used to create the SAP_FLUX column in
+  HDU1.
+
+```
+
+Where possible (if the code supports it), use code examples that visually
+display the data in the tutorial. For example, if you are showing an object that
+can be read as an Astropy table, display the table:
+
+![show-data-example](images/notebook_table_data_example.png)
+
+#### Terms and Resources
 
 All terms and relevant additional resources should be defined and linked to as
 new topics are introduced and your tutorial progresses, so that terms and
 resources appear within the context of your main content. Short exercises can be
-woven into your Main Content sections as well.
+woven into your main content sections as well.
 
 ### Exercises
 
-Exercises are optional, but encouraged. Exercises can be woven into the Main
-Content of your tutorial, or appear in their own section toward the end of the
+Exercises are optional, but encouraged. Exercises can be woven into the main
+content of your tutorial, or appear in their own section toward the end of the
 tutorial. Final exercises can be more challenging, similar to homework problems.
 They can be minimal or take as long as 30 minutes to an hour to complete.
 
@@ -335,17 +340,11 @@ attempt.
 
 ### Additional Resources
 
-.. suggestion to remove the Additional Resources section and instead ask
-   tutorial authors to include additional resources in line with the context of
-   their main content, instead of in a separate list at the end that has no
-   context.
-
-While this section isn't always necessary, sometimes you want to provide more
-resources for the reader who wants to learn something beyond what's in your
-tutorial. Sometimes these resources don't exist, but if they do, it's good to
-put them at the end of your tutorial to give the reader somewhere else to go.
-Usually a list of links using Markdown bullet list plus link format is
-appropriate:
+This section is optional. Try to weave resource links into the main content of
+your tutorial so that they are falling in line with the context of your writing.
+For resources that do not fit cleanly into your narrative, you may include an
+additional resources section at the end of your tutorial. Usually a list of
+links using Markdown bullet list plus link format is appropriate:
 
 ```
 * [A neat resource to learn
