@@ -46,6 +46,7 @@ good practices when releasing a package.
 
 3. When preparing a release use branches and pull requests (PR) following the
    [Workflow for contributing to a Git repository](https://github.com/spacetelescope/style-guides/blob/master/guides/git-workflow.md).
+   
 
 4. Tag the software with a "release tag" in the repository.
 
@@ -87,11 +88,34 @@ good practices when releasing a package.
 
 ## Specific release procedures
 
-The following two sections provide specific instructions for releasing a python
-package in the two main use cases listed above. It is assumed the person doing the
-release uses the `spacetelescope` repository directly as a working directory.
-This means the main repository at `spacetelescope` needs to be cloned and
-that "origin" points to `spacetelescope`, not to the person's fork.
+The following two sections provide specific instructions for releasing a _python_
+package using release automation provided in the spacetelescope Github organization
+and also via manual methods. Only one method, either Automatic or Manual, is necessary
+for release and publication of a software package.
+
+### A) Automatic Release Flow
+
+A Github actions workflow has been developed and made available to repositories within
+the spacetelescope Github organization to allow for automatic publication of python software
+releases to PyPI (See 'Good Practices' above).
+
+In short, this process involves a one-time setup of the publication service on a given repository. Once
+the service is installed, creating a "Github release" in the repository will define
+either a newly-specified or existing git tag (from any branch) as the commit to release and then package up
+the software from that commit for distribution on PyPI before uploading it using a particular set of
+default PyPI maintainer credentials, or credentials specified by the user.
+
+Details on the use of this workflow, including the simple opt-in process may be found here:
+https://github.com/spacetelescope/action-publish_to_pypi  Please read through this short document
+before deciding to use the publication service.
+
+All release and publication steps may be performed through the Github web interface. No local repository procedures are required.
+
+### B) Manual Release Flow
+
+It is assumed the person doing the release uses the `spacetelescope` repository directly
+as a working directory. This means the main repository at `spacetelescope` needs to be
+cloned and that "origin" points to `spacetelescope`, not to the person's fork.
 
   ```
   $ git clone git@github.com:spacetelescope/mypackage.git
@@ -102,7 +126,7 @@ that "origin" points to `spacetelescope`, not to the person's fork.
   ```
 
 
-### Developing and releasing from the master branch.
+#### Developing and releasing from the master branch.
 
 In this case all work is done on the `master` branch. Old releases are not
 maintained. When the code is ready for release, set the version in setup.py
@@ -117,7 +141,7 @@ and set the date of the release in CHANGES.rst. Tag the release on master.
 Create an annotated tag which corresponds to the release and push it to the repository.
 Publish the release on Github and PyPi.
 
-### Use a different release branch for each release.
+#### Use a different release branch for each release.
 
 In this case the release is prepared on a dedicated branch ("release branch").
 It is possible to maintain old releases by doing a patch release off a release branch.
