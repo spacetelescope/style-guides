@@ -68,7 +68,7 @@ Code hosted on GitHub should follow the [STScI GitHub
 Policy](https://innerspace.stsci.edu/display/isec/GitHub).
 
 
-### Creating an new repository
+### Creating a new repository
 
 For GitHub:
 

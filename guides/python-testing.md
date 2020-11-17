@@ -107,7 +107,7 @@ For GitHub, here are some services available:
   (but do not push your luck). It supports storing big data and artifacts in
   Artifactory. Its internal-only instance also supports direct access to
   Central Storage. Unfortunately, it is not easily accessible for non-STScI
-  personnels. It currently only supports Linux operating system. For more
+  personnel. It supports Linux (label: `linux`) and MacOS (label: `macos`) operating systems. For more
   information, see
   [Users Guide: Running Regression Tests](https://innerspace.stsci.edu/display/SSR/Users+Guide%3A+Running+Regression+Tests).
 * Circle CI: This is a free service (with limitations). It supports storing
