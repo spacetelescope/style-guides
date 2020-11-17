@@ -100,6 +100,9 @@ push events (e.g., commits to GitHub) or to run in a preset cadence
 
 For GitHub, here are some services available:
 
+* GitHub Actions: This is a paid service billed centrally to STScI.
+  Repositories on ``spacetelescope`` GitHub organization should use it,
+  if possible.
 * Jenkins CI: This is an in-house CI solution with virtually no limitation
   (but do not push your luck). It supports storing big data and artifacts in
   Artifactory. Its internal-only instance also supports direct access to
@@ -107,18 +110,8 @@ For GitHub, here are some services available:
   personnels. It currently only supports Linux operating system. For more
   information, see
   [Users Guide: Running Regression Tests](https://innerspace.stsci.edu/display/SSR/Users+Guide%3A+Running+Regression+Tests).
-* Travis CI: This is a free service (with limitations). It supports different
-  operating systems, such as Linux, OSX, and Windows.
-  Currently, you can enable Travis CI using GitHub Services, which
-  is being deprecated. In the future, it will move to GitHub Apps (see
-  https://blog.travis-ci.com/2018-05-02-open-source-projects-on-travis-ci-com-with-github-apps).
-* Azure CI is a pretty new (as of writing) competitor of Travis CI. See
-  https://azure.microsoft.com/en-us/blog/announcing-azure-pipelines-with-unlimited-ci-cd-minutes-for-open-source/ for more info.
 * Circle CI: This is a free service (with limitations). It supports storing
   artifacts but is lacking in good customer service.
-* Appveyor CI: This is a free service (with limitations) for testing on Windows
-  operating system. With Windows support on Travis CI and Azure CI, this
-  service is quickly becoming obsolete.
 
 For STScI GitLab instances, please contact ITSD.
 
@@ -128,7 +121,7 @@ There are several packages available to quantify the test-code coverage of the
 GitHub repository code.  One is [Coveralls](https://coveralls.io) and some
 packages at STScI are using this as part of the CI automated procedure. A
 second is [Codecov](https://codecov.io/) that is very similar to Coveralls.
-There are other STScI GitHub repositories that are using Codecov. 
+There are other STScI GitHub repositories that are using Codecov.
 
 There are benefits to both packages and one of them should be setup in each
 repository to quantify the test code coverage and to encourage writing test
@@ -136,7 +129,7 @@ code. At this time, Codecov is the recommended service over Coveralls.
 There appear to be several benefits to using Codecov (over Coveralls)
 including a cleaner method to automatically report test-code coverage test on a
 PR within GitHub. So, it is encouraged that each STScI repository include
-Codecov coverage tests as part of the automated CI in Travis or Jenkins.
+Codecov coverage tests as part of the automated CI in Actions or Jenkins.
 
 
 ## Displaying test status
