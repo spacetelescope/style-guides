@@ -105,11 +105,11 @@ For GitHub, here are some services available:
   if possible.
 * Jenkins CI: This is an in-house CI solution with virtually no limitation
   (but do not push your luck). It supports storing big data and artifacts in
-  Artifactory. Its internal-only instance also supports direct access to
-  Central Storage. Unfortunately, it is not easily accessible for non-STScI
-  personnel. It supports Linux (label: `linux`) and MacOS (label: `macos`) operating systems. For more
-  information, see
-  [Users Guide: Running Regression Tests](https://innerspace.stsci.edu/display/SSR/Users+Guide%3A+Running+Regression+Tests).
+  Artifactory. If STScI staff need to execute tests at regular intervals, or
+  require direct access to Central Storage, please refer to the following documentation,
+  [Users Guide: Running Regression Tests](https://innerspace.stsci.edu/display/SSR/Users+Guide%3A+Running+Regression+Tests)
+  for more information. Unfortunately, it is not easily accessible for non-STScI
+  personnel. It supports Linux (label: `linux`) and MacOS (label: `macos`) operating systems.
 * Circle CI: This is a free service (with limitations). It supports storing
   artifacts but is lacking in good customer service.
 
