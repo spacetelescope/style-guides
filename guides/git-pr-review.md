@@ -1,4 +1,4 @@
-# GitHub Pull Request Review ("Code Review") 
+# GitHub Pull Request Review ("Code Review")
 
 ## Introduction
 
@@ -37,13 +37,13 @@ different focus on the steps below, for example:
 
 * A scientist, content specialist, or product owner might focus more on Steps 4
   and 5, so they can confirm that the changes make sense from a science
-  point-of-view. 
+  point-of-view.
 
 * The package maintainer / GitHub repository maintainer will want to make sure
   that each of these steps are done but may not need to be the one doing each
   step.  The package maintainer will be the one who will want to confirm the code
   to be merged fits the framework of existing code, is correct and the
-  documentation and tests are sufficient. 
+  documentation and tests are sufficient.
 
 Note also that following this guide helps contributors as much as reviewers.  A
 clear understanding of the process makes it easier for contributions to be
@@ -66,7 +66,7 @@ Then, if there is a corresponding GitHub issue or issues, read through the
 original content of the issue and then read through the discussion and
 clarification.
 
-Many times there are going to be other "requirements" or clarifications that 
+Many times there are going to be other "requirements" or clarifications that
 might influence the PR beyond the original issue text.
 
 If the PR does not appear to fix/implement the issue or the description is not
@@ -78,7 +78,7 @@ understanding or thoughts in the PR for future reference.
 Look through the code and see if it addresses the items in the PR and any
 related issue comments.  It should answer only the issue and not other bugs
 etc.  Other ones should be a in a separate PR (which will make it easier for
-review, and bisecting if a bug is added and found later on). 
+review, and bisecting if a bug is added and found later on).
 
 The code should also be reviewed for style, maintainability, and to make sure
 it fits into the framework of the code in the GitHub repository. It would be
@@ -103,7 +103,7 @@ interface to give the PR author specific and actionable suggestions.
 
 Note: all packages following these style guides should use continuous
 integration (CI) as thoroughly as practical to simplify the testing process.
-On GitHub/public projects, this usually means Travis-CI, whereas internal
+On GitHub/public projects, this usually means GitHub Actions, whereas internal
 projects use Jenkins.  In general these both address the same core problem:
 automatically running unit tests to ensure the changes a PR introduces do not
 break code. For more details, see [a forthcoming CI style
@@ -118,7 +118,7 @@ guide](https://github.com/spacetelescope/style-guides/issues/8).
    from the issue? If so they need to be included in the same PR as the code.
 
 If the tests do not run or fail, well, definitely stop now and get the author
-to fix the code so the tests pass.  
+to fix the code so the tests pass.
 
 If more tests are needed, request them from the author.
 
@@ -151,7 +151,7 @@ branch, and run the tests (manual or automatically) yourself.
 
 If there are GUI changes, test the GUI related to the code changes and confirm
 any science results that are not automatically confirmed by automated test.
-Running the code locally is important!  
+Running the code locally is important!
 
 To see how Cubeviz implements this step, please see [Procedure for testing open
 github

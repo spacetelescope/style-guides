@@ -25,7 +25,7 @@ There are various pros and cons to each workflow, and it may not be obvious as t
 Under the branching workflow:
 
 - Any team member with write access to the repository can collaborate directly in adding code, revising, or testing a branch.
-- Continuous integration tools such as Travis or Jenkins can be enabled for all branches of the repository in a single location, so new feature branches can automatically be tested when a pull request is opened or modified.
+- Continuous integration tools such as GitHub Actions or Jenkins can be enabled for all branches of the repository in a single location, so new feature branches can automatically be tested when a pull request is opened or modified.
 - It is not possible for external collaborators to contribute unless they explicitly have write access to the `spacetelescope` repository, and when external collaborators are required, repositories must adhere to [ITSD policies](https://innerspace.stsci.edu/pages/viewpage.action?spaceKey=isec&title=Source+Code+Control).
 - It is easier to accidentally delete or overwrite the work of others who are also working on the same branch, or happen to have their own branch of the same name.  While it is possible to recover this work or to restrict the editing of specific branches to only select developers, it can sometimes be a painstaking process.
 - Repositories may accrue a fair amount of stale branches over time, which may become burdensome for developers, and may cause collaborators to infer that the project is not being maintained.

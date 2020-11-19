@@ -68,7 +68,7 @@ Code hosted on GitHub should follow the [STScI GitHub
 Policy](https://innerspace.stsci.edu/display/isec/GitHub).
 
 
-### Creating an new repository
+### Creating a new repository
 
 For GitHub:
 
@@ -100,6 +100,13 @@ for more info.
 
 3. Carefully go through your new repository and customize as needed.
 
+To customize GitHub Actions, look in `tox.ini` and `.github/workflows/`.
+
+Your test matrix should test against various versions of Python, astropy,
+and numpy, as applicable to your project.
+
+For Jenkins, see https://github.com/spacetelescope/jenkins_shared_ci_utils .
+
 4. Register your package on https://codecov.io if you want test coverage.
 
 5. Set up ReadTheDocs (RTD)
@@ -118,4 +125,3 @@ further development with testing and documentation in place.
 * [Guide for github repositories](https://github.com/spacetelescope/style-guides/blob/master/guides/github-repositories.md)
 * [Documentation for the Cookiecutter Project](https://cookiecutter.readthedocs.io/en/latest/readme.html)
 * [The Astropy Package Template](http://docs.astropy.org/projects/package-template/en/latest/)
-
