@@ -98,9 +98,11 @@ To create a new package, we recommend the following steps.
 See https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
 for more info.
 
-3. Register your package on https://codecov.io if you want test coverage.
+3. Carefully go through your new repository and customize as needed.
 
-4. Set up ReadTheDocs (RTD)
+4. Register your package on https://codecov.io if you want test coverage.
+
+5. Set up ReadTheDocs (RTD)
 
 If you want the documentation for your project to be hosted by
 RTD, then you need to set up an account there. Your RTD
