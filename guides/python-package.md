@@ -113,7 +113,7 @@ For Jenkins, see https://github.com/spacetelescope/jenkins_shared_ci_utils .
 
 If you want the documentation for your project to be hosted by
 RTD, then you need to set up an account there. Your RTD
-settings are controlled by `.readthedocs.yml` in your repository.
+settings are controlled by `.readthedocs.yaml` in your repository.
 Optionally, you can enable "Build pull requests for this project"
 under Advanced Settings in Admin section.
 
