@@ -246,6 +246,9 @@ as for 3.x Minor Versions, but with two important differences:
   above, this depends substantially on the user community, but this
   rule-of-thumb is a good one when no other information is available.
 
+As a reference, please see the [Astropy version support](https://github.com/astropy/astropy-APEs/blob/main/APE18.rst) 
+(APE 18) and [NumPy version support](https://numpy.org/neps/nep-0029-deprecation_policy.html) (NEP 29) policies.
+
 As for 3.x Minor Versions, the package maintainer is responsible for applying
 the guidelines, but in consultation with team/branch leadership or a product
 owner/project manager.
