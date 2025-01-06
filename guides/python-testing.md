@@ -11,12 +11,9 @@ as you deem necessary.
 There are many ``pytest`` plugins that you could utilize to get the most
 out of your tests. Example of several useful ones:
 
-* [pytest-doctestplus](https://github.com/astropy/pytest-doctestplus) for
+* [pytest-doctestplus](https://github.com/scientific-python/pytest-doctestplus) for
   advanced features for testing example code in documentation.
-* [pytest-openfiles](https://github.com/astropy/pytest-openfiles) for
-  detecting file handles that were inadvertently left open at the end of
-  unit tests.
-* [pytest-arraydiff](https://github.com/astrofrog/pytest-arraydiff) for
+* [pytest-arraydiff](https://github.com/astropy/pytest-arraydiff) for
   generation and comparison of data arrays produced during unit tests.
 * [pytest-socket](https://github.com/miketheman/pytest-socket) for handling
   network calls.
